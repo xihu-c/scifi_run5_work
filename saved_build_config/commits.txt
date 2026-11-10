@@ -1,0 +1,9 @@
+Commits in this stack (git rev-parse HEAD), 2026-11-10
+Gaudi 777c37dd5bc65861528eb472095e6a91c4650766
+Detector ebd2fadd557d8b56cb9a36f33219bfc51a081995
+LHCb 1b7a31625d1d984ce391ac5895b326e4903921d5
+Lbcom f31464a1eba1c8e33c218c73b67c196bcc5186f2
+Rec 8bee680ba40f2e3fcfbfb2fcdc7cc329ce3ea939
+Moore 0d9eca5cbb9f2d00614625ec9fc947dee12e42d3
+Allen 4cb5bf8a61cb7041a36bde3c282f83c600f84137
+utils d7e7b410bf8bcc1e327d17ffa9c1885e8ee03bb7

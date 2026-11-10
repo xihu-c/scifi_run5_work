@@ -1,0 +1,91 @@
+{
+    "binaryTag": "x86_64_v3-el9-gcc15-opt",
+    "lcgVersion": "108c",
+    "gitBase": "ssh://git@gitlab.cern.ch:7999",
+    "useDistcc": false,
+    "ccacheHostsKey": "NA",
+    "distccLocalslotsCpp": 32,
+    "vscodeWorkspaceSettings": {
+        "workbench.colorCustomizations": {
+            "titleBar.activeBackground": "#47576d",
+            "titleBar.activeForeground": "#ffffff"
+        }
+    },
+    "functorJitNJobs": 4,
+    "useDocker": false,
+    "promptedModelSlot": "lhcb-run5",
+    "gitBranch": {
+        "default": "master",
+        "defaultDataPackages": "master",
+        "Gaudi": "v41r0",
+        "Detector": "master",
+        "LHCb": "run5",
+        "Lbcom": "master",
+        "Rec": "run5",
+        "Allen": "run5",
+        "Moore": "run5",
+        "Alignment": "run5",
+        "Online": "master",
+        "MooreOnline": "master",
+        "Panoptes": "run5",
+        "PRConfig": "master"
+    },
+    "extraDependencies": {
+        "Gaudi": [
+            "LCG"
+        ],
+        "Detector": [
+            "LCG"
+        ],
+        "LHCb": [
+            "DBASE",
+            "Detector",
+            "Gaudi"
+        ],
+        "Lbcom": [
+            "LHCb"
+        ],
+        "Rec": [
+            "Lbcom"
+        ],
+        "Allen": [
+            "Rec"
+        ],
+        "Moore": [
+            "Allen",
+            "Rec"
+        ],
+        "Alignment": [
+            "Moore"
+        ],
+        "Online": [
+            "Gaudi"
+        ],
+        "MooreOnline": [
+            "Alignment",
+            "Moore",
+            "Online"
+        ],
+        "Panoptes": [
+            "MooreOnline"
+        ]
+    },
+    "slotProjects": [
+        "Gaudi",
+        "Detector",
+        "LHCb",
+        "Lbcom",
+        "Rec",
+        "Allen",
+        "Moore",
+        "Alignment",
+        "Online",
+        "MooreOnline",
+        "Panoptes"
+    ],
+    "cmakeCache": {
+        "CMAKE_CXX_SCAN_FOR_MODULES": "NO",
+        "CMAKE_POLICY_DEFAULT_CMP0167": "NEW",
+        "GAUDI_LEGACY_CMAKE_SUPPORT": true
+    }
+}

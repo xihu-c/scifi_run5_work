@@ -1,0 +1,12 @@
+diff -ru Detector/compact/run5/proto-v00.03/versions.xml Detector/compact/run5/proto-v00.03-picocalfix/versions.xml
+--- Detector/compact/run5/proto-v00.03/versions.xml	2026-11-09 14:03:25.000000001 +0100
++++ Detector/compact/run5/proto-v00.03-picocalfix/versions.xml	2026-11-10 07:58:46.000000001 +0100
+@@ -22,7 +22,7 @@
+     <constant name="version:MP" value="proto-run5-v00.01" type="string"/>
+     <constant name="version:Tracker" value="proto-run5-v00.01" type="string"/>
+     <constant name="version:NeutronShielding" value="2024-v00.00" type="string"/>
+-    <constant name="version:PicoCal" value="proto-run5-v00.00" type="string"/>
++    <constant name="version:PicoCal" value="proto-run5-v01.00" type="string"/>
+     <constant name="version:Muon" value="proto-run5-v00.00" type="string"/>
+     <constant name="version:Regions" value="2024-v00.01" type="string"/>
+     <constant name="version:Materials" value="proto-run5-v00.00" type="string"/>

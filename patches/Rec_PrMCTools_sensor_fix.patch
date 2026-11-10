@@ -1,0 +1,35 @@
+diff --git a/Pr/PrMCTools/src/DepositCreatorDetailed.cpp b/Pr/PrMCTools/src/DepositCreatorDetailed.cpp
+index c8d65b85df..20cc8cbfe7 100644
+--- a/Pr/PrMCTools/src/DepositCreatorDetailed.cpp
++++ b/Pr/PrMCTools/src/DepositCreatorDetailed.cpp
+@@ -202,7 +202,7 @@ DepositCreatorDetailed::return_type DepositCreatorDetailed::operator()( const LH
+   for ( auto& hits_per_particle : hits_per_sensor ) {
+     if ( hits_per_particle.size() == 0 ) continue;
+     auto                      h0        = hits_per_particle.begin()->second[0];
+-    const auto&               sensor    = det.sensor( h0->sensDetID() );
++    const auto&               sensor    = det.sensor( TVChannelID::SensorID( h0->sensDetID() ) );
+     auto                      moduleID  = static_cast<unsigned>( sensor.module() );
+     auto                      stationID = moduleID / 2;
+     std::map<unsigned, float> all_hits;
+@@ -273,7 +273,7 @@ std::map<unsigned, float> DepositCreatorDetailed::createDeposits( const std::vec
+       q_sum += q;
+     }
+ 
+-    const auto&  sensor    = det.sensor( hit.sensDetID() );
++    const auto&  sensor    = det.sensor( TVChannelID::SensorID( hit.sensDetID() ) );
+     const double thickness = sensor.siliconThickness();
+     // Calculate the distance between two points on the trajectory.
+     Gaudi::XYZPoint  entry = sensor.globalToLocal( hit.entry() );
+diff --git a/Pr/PrMCTools/src/FakeClusteringTV.cpp b/Pr/PrMCTools/src/FakeClusteringTV.cpp
+index a645e4a9f8..6b0e9c1a28 100644
+--- a/Pr/PrMCTools/src/FakeClusteringTV.cpp
++++ b/Pr/PrMCTools/src/FakeClusteringTV.cpp
+@@ -119,7 +119,7 @@ FakeClusteringTV::return_t FakeClusteringTV::operator()( const LHCb::MCHits& mcH
+       sensID = tv.sensitiveVolumeID( hit->midPoint() );
+       if ( sensID == -1 ) continue; /// invalid
+       volumeID = TVVolumeID( TVChannelID::SensorID( sensID ) );
+-      sensor   = tv.sensor( hit->sensDetID() );
++      sensor   = tv.sensor( TVChannelID::SensorID( hit->sensDetID() ) );
+     } catch ( std::exception& error ) {
+       warning() << error.what() << endmsg;
+       continue;
