@@ -17,8 +17,7 @@ resolution is; every `sigma_t` below is a placeholder.
 6 x-layers (angle 0), 3 U-layers (-5 deg), 3 V-layers (+5 deg). No layer measures y directly.
 
 **Each hit i is one 1-D measurement** $u_i$ in layer $l(i)$ at known $z_i$: for X layer, $u_i = x_i$; 
-
-$$u_i = x_i^0 + y_i \cdot \text{(dx/dy)}_l, \quad \text{(dx/dy)}_l =  \tan(\theta_l) & \text{(U,V layers)}, \quad \theta = \pm 5°$$
+$$u_i = x_i^0 + y_i \cdot \text{(dx/dy)}_l, \quad \text{(dx/dy)}_l =  \tan(\theta_l) \quad \text{(U,V layers)}, \quad \theta = \pm 5^\circ$$
 
 (`x_i^0` is the hit position at y=0, `dxdy` the layer slope; in the code `sciFiHits.x(i, y)` and `dxdy`.)
 So a seed with N hits has N position measurements, not 3N. y enters only through stereo layers.
