@@ -30,11 +30,29 @@ Input: `upgrade2_minbias_1p0e34_Jan2026` (DIGI with MC truth, on CVMFS), 20 even
 Result (20 events, FT-reconstructible long tracks): efficiency 89.5%, >5 GeV 97.0%, purity 99.4%,
 ghosts 13.6%, clones 0%.
 
-## Time-aware seeding (prototype)
-- `external_time/extract_mc_times.py`: external GaudiPython job, MC hit time per lite cluster (outside the stack).
-- `external_time/smear_times.py`: external Gaussian smearing, one table per sigma_t (`event channelID time[ns]`).
-- Rec: `PrFTHitTimesFromFile` reads the table (no smearing, no MC); `PrHybridSeeding` fits `t = a + b*dz`
-  (`PrTrackFitterT.h`) with options `TimeSelection`, `SigmaT`, `MaxTimeChi2PerDoF`, `T0Window`.
-- Run from `run5_test/`: `../run_time_scan.sh TAG TIMEFILE SIGMA_NS 1 [EVT] [CHI2CUT] [T0WIN]`
-  (`Moore/run` drops env vars, so settings go through `time_config.json`), or `../run_sigma_scan.sh 3`.
-- Table: `python3 ../make_time_scan_report.py TIME_SCAN_REPORT.md label=log ...`
+## Current timing implementation
+
+The timing seeding is ported from `jialu/Rec` (`PrHybridSeedingTiming`), with an
+opt-in SciFi-only seven-dimensional Kalman fit. See
+[SCIFI_TIME_IMPLEMENTATION.md](SCIFI_TIME_IMPLEMENTATION.md) for sample timing,
+configuration, covariance output, build and validation details.
+
+Run from an output directory such as `run5_test/`:
+
+```bash
+../../Moore/run gaudirun.py ../run5_scifi_time_kalman_test.py > log_scifi_time_7d.txt 2>&1
+```
+
+Defaults use the January 1.3e34 sample, 20 events, MC-derived hit times with
+explicit 0.8 ns Gaussian smearing and the jialu fibre-delay model. TV is excluded.
+The newer TDR production directories require their corresponding geometry.
+
+Learning and design documents:
+
+- [SCIFI_SPATIAL_KALMAN_READING_GUIDE.md](SCIFI_SPATIAL_KALMAN_READING_GUIDE.md)
+- [SCIFI_TIME_KALMAN_EXTENSION_SCHEME.md](SCIFI_TIME_KALMAN_EXTENSION_SCHEME.md)
+
+`external_time/`, `run_time_scan.sh`, `run_sigma_scan.sh`, and
+`run5_ft_seeding_time_test.py` document the historical text-file prototype.
+Their `PrFTHitTimesFromFile`/`TimeSelection` configuration is superseded and is
+not supported by the current port. Historical reports are retained as records.

@@ -1,0 +1,561 @@
+# setting LC_ALL to "C"
+# --> Including file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_scifi_time_kalman_test.py'
+/***** User ApplicationOptions/ApplicationOptions **************************************************
+|-append_decoding_keys_to_output_manifest = True  (default: True)
+|-auditors                                = []  (default: [])
+|-conddb_tag                              = ''  (default: '')
+|-conditions_version                      = 'sim11/run5-ideal'  (default: '')
+|-control_flow_file                       = ''  (default: '')
+|-data_flow_file                          = ''  (default: '')
+|-data_type                               = 'Upgrade'  (default: 'Upgrade')
+|-dddb_tag                                = ''  (default: '')
+|-dstformat                               = <DSTFormatTypes.DST: 'DST'>  (default: <DSTFormatTypes.DST: 'DST'>)
+|-enable_online_special_conditions        = False  (default: False)
+|-event_store                             = 'HiveWhiteBoard'  (default: 'HiveWhiteBoard')
+|-evt_max                                 = 20  (default: -1)
+|-first_evt                               = 0  (default: 0)
+|-force_odin                              = False  (default: False)
+|-gaudipython_mode                        = False  (default: False)
+|-geometry_backend                        = 'DD4Hep'  (default: 'DD4Hep')
+|-geometry_version                        = 'run5/proto-v00.03-picocalfix'  (default: '')
+|-histo_calo                              = False  (default: False)
+|-histo_file                              = 'spatial_histos.root'  (default: '')
+|-histo_string_width                      = 80  (default: 80)
+|-input_files                             = ['/tmp/xihu/scifi_1p3_slot9.digi']  (default: [])
+|-input_manifest_file                     = ''  (default: '')
+|-input_process                           = ''  (default: '')
+|-input_raw_format                        = 0.5  (default: 0.5)
+|-input_stream                            = ''  (default: '')
+|-input_streams_attributes_file           = ''  (default: '')
+|-input_type                              = 'ROOT'  (default: '')
+|-ioalg_buffer_nb_events                  = 20  (default: 40)
+|-lines_maker                             = None
+|-mdf_ioalg_name                          = 'IOAlgFileRead'  (default: 'IOAlgFileRead')
+|-memory_pool_size                        = 10485760  (default: 10485760)
+|-monitoring_file                         = ''  (default: '')
+|-msg_svc_format                          = '% F%35W%S %7W%R%T %0W%M'  (default: '% F%35W%S %7W%R%T %0W%M')
+|-msg_svc_time_format                     = '%Y-%m-%d %H:%M:%S UTC'  (default: '%Y-%m-%d %H:%M:%S UTC')
+|-n_event_slots                           = 1  (default: -1)
+|-n_threads                               = 1  (default: 1)
+|-ntuple_basketsize                       = 32000  (default: 32000)
+|-ntuple_file                             = 'spatial_tuple.root'  (default: '')
+|-ntuple_lun                              = 'FILE1'  (default: 'FILE1')
+|-output_file                             = ''  (default: '')
+|-output_level                            = 3  (default: 3)
+|-output_manifest_file                    = ''  (default: '')
+|-output_streams_attributes_file          = 'line_attribute_dict.json'  (default: 'line_attribute_dict.json')
+|-output_type                             = ''  (default: '')
+|-persistreco_version                     = 1.0  (default: 1.0)
+|-phoenix_filename                        = ''  (default: '')
+|-preamble_algs                           = []  (default: [])
+|-preload_input_files_at_initialize       = True  (default: True)
+|-print_freq                              = 5  (default: 10000)
+|-process                                 = None
+|-python_logging_level                    = 20  (default: 20)
+|-require_specific_decoding_keys          = []  (default: [])
+|-root_ioalg_name                         = 'RootIOAlg'  (default: 'RootIOAlg')
+|-root_ioalg_opts                         = {}  (default: {})
+|-scheduler_legacy_mode                   = False  (default: True)
+|-simulation                              = True  (default: None)
+|-write_decoding_keys_to_git              = None
+|-write_fsr                               = False  (default: False)
+|-write_fsr_json_file                     = ''  (default: '')
+|-write_options_to_fsr                    = False  (default: False)
+|-write_streams_attributes_to_json        = False  (default: False)
+|-xml_file_catalog                        = ''  (default: '')
+|-xml_summary_file                        = ''  (default: '')
+|-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
+\----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
+# Overrule specified for keys 
+# <-- End of file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_scifi_time_kalman_test.py'
+# Using git repository: git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git
+# /***** Service LHCb::Det::LbDD4hep::DD4hepSvc/LHCb::Det::LbDD4hep::DD4hepSvc ***********************
+# |-OutputLevel               = 0
+# |-AuditInitialize           = False
+# |-AuditFinalize             = False
+# |-AuditStart                = False
+# |-AuditStop                 = False
+# |-AuditReinitialize         = False
+# |-AuditRestart              = False
+# |-AutoRetrieveTools         = True
+# |-CheckToolDeps             = True
+# |-GeometryLocation          = '${DETECTOR_PROJECT_ROOT}/compact'
+# |-GeometryVersion           = 'run5/proto-v00.03-picocalfix'  (default: '')
+# |-GeometryMain              = 'LHCb.xml'  (default: '')
+# |-ConditionsLocation        = 'git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git'
+# |                           (default: 'git:/lhcb-conditions-database')
+# |-ConditionsOverride        = {}  (default: {})
+# |-ConditionsVersion         = 'sim11/run5-ideal'  (default: 'HEAD')
+# |-DetectorList              = ['/world', 'FT', 'Magnet']
+# |                           (default: ['/world', 'VP', 'UT', 'FT', 'Magnet', 'Rich1', 'Rich2', 'Ecal', 'Hcal', 'Muon'])
+# |-VerboseLevel              = 0
+# |-PrintLevel                = 3
+# |-NominalMagnetCurrent      = 5850.0
+# |-DumpConditions            = False
+# |-UseConditionsOverlay      = False
+# |-ConditionsOverlayInitPath = ''
+# |-LimitedIOVPaths           = []  (default: [])
+# |-nTGeoManagerThreads       = 1  (default: 1)
+# |-DetectorBuildType         = 'BUILD_DEFAULT'
+# \----- (End of Service LHCb::Det::LbDD4hep::DD4hepSvc/LHCb::Det::LbDD4hep::DD4hepSvc) --------------
+ApplicationMgr     SUCCESS 
+====================================================================================================================================
+                                                   Welcome to Moore version 59.1
+                                          running on lxplus940.cern.ch on Wed Nov 11 12:47:19 2026
+====================================================================================================================================
+ApplicationMgr        INFO Application Manager Configured successfully
+Gaudi__Histograming__Sink__Root        INFO Writing ROOT histograms to: spatial_histos.root
+NTupleSvc                              INFO Added stream file:spatial_tuple.root as FILE1
+HLTControlFlowMgr                      INFO Start initialization
+HLTControlFlowMgr                      INFO Will not use an EventSelector.
+RootHistSvc                            INFO Writing ROOT histograms to: spatial_tuple.root
+HistogramPersistencySvc                INFO Added successfully Conversion service RootHistSvc
+DetectorDataSvc                        INFO Detector description not requested to be loaded
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+DD4hep           INFO  ++ Using globally Geant4 unit system (mm,ns,MeV)
+TGeoManager                            INFO Changing system of units to Geant4 units (mm, ns, MeV).
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Loading DD4hep Geometry: /afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/run5/proto-v00.03-picocalfix/LHCb.xml
+Detector                               INFO *********** Created World volume with size: 50000 50000 50000
+VisAttr                                INFO +++ BlackVis Allocated a Color: r:19 g:19 b:19, this will not save to a ROOT file
+Alignments                             INFO ++ Add dependency: alignmentsComputedKey: /world 00000000F25B48E3
+VisAttr                                INFO +++ Pipe:Bakeout Allocated a Color: r:00 g:FF b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:AfterMuon Allocated a Color: r:FF g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:InT Allocated a Color: r:00 g:E5 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:AfterT Allocated a Color: r:E5 g:00 b:00, this will not save to a ROOT file
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Pipe/proto-run5-v00.00/materials.xml.
+VisAttr                                INFO +++ Regions:Upstream Allocated a Color: r:19 g:FF b:00, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:UpstreamRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BeforeMagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:MagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:AfterMagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BlockWallBefMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BlockWallUpStr of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BcmUp of type LHCb_Bcm_v1_0 [sensitive]
+Compact                                INFO ++ Converted subdetector:BcmDown of type LHCb_Bcm_v1_0 [sensitive]
+VisAttr                                INFO +++ MBXW:SpacerVis Allocated a Color: r:FF g:99 b:4C, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:MBXWUp of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:MBXWSUp of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:MBXWDown of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:PipeUpstream of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAAUpstreamVax of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMAAAUpstream of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMACAUpstream1 of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMACAUpstream2 of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMABKUpstream of type LHCb_Pipe_VMA_v1_0 
+VisAttr                                INFO +++ Rich:VisRich1SubMaster Allocated a Color: r:4C g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1MagSh Allocated a Color: r:19 g:19 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1MgShield Allocated a Color: r:E5 g:19 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1CaFiInnerSeg Allocated a Color: r:00 g:7F b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1CaFiOuterSeg Allocated a Color: r:33 g:4C b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1Quadrant Allocated a Color: r:99 g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1Master Allocated a Color: r:66 g:B2 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2QuadrantMaster Allocated a Color: r:33 g:CC b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2Support Allocated a Color: r:4C g:B2 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2 Allocated a Color: r:19 g:66 b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1PhDetSupFrame Allocated a Color: r:B2 g:E5 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1BeamPipe Allocated a Color: r:00 g:00 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTModuleMaster Allocated a Color: r:B2 g:66 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTECR Allocated a Color: r:66 g:B2 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTECH Allocated a Color: r:33 g:7F b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTMaster Allocated a Color: r:CC g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTSMaster Allocated a Color: r:99 g:4C b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTQuartz Allocated a Color: r:B2 g:33 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTPhCathode Allocated a Color: r:33 g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTEnvelope Allocated a Color: r:33 g:66 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTFrontRing Allocated a Color: r:19 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTShielding Allocated a Color: r:7F g:4C b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTQuartz Allocated a Color: r:B2 g:CC b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTEnvelope Allocated a Color: r:7F g:99 b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTFrontRing Allocated a Color: r:66 g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTMaster Allocated a Color: r:7F g:B2 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTAnode Allocated a Color: r:66 g:66 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTModuleMaster Allocated a Color: r:4C g:66 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitG10Upstr Allocated a Color: r:7F g:4C b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitG10Dnstr Allocated a Color: r:66 g:33 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitPMI Allocated a Color: r:4C g:CC b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitDiaphramCentral Allocated a Color: r:33 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitDiaphramPlug Allocated a Color: r:66 g:4C b:CC, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:Rich1 of type LHCb_Rich1_Geometry_RUN3_v2 
+VisAttr                                INFO +++ TV:BumpBonds Allocated a Color: r:B2 g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:GuardRing Allocated a Color: r:00 g:E5 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:Hybrid Allocated a Color: r:00 g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:Clamp Allocated a Color: r:E5 g:00 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:LVClamp Allocated a Color: r:D3 g:AD b:35, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:ModuleGBT Allocated a Color: r:4C g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:RFBox Allocated a Color: r:FF g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ RFFoil Allocated a Color: r:7F g:7F b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:DAQBox Allocated a Color: r:0F g:FC b:EF, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:DAQBoxSeals Allocated a Color: r:19 g:07 b:63, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:VacuumTank Allocated a Color: r:4C g:B2 b:FF, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:TV of type LHCb_TV_v1_0 [tracker]
+TGeoMixture::ComputeDerivedQuant... WARNING Mixture UP:PCB: sum of weights is: 0.9953
+VisAttr                                INFO +++ UP:Envelope Allocated a Color: r:FF g:7F b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Frame Allocated a Color: r:54 g:2D b:3F, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:GR Allocated a Color: r:66 g:93 b:87, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:VTRx Allocated a Color: r:00 g:00 b:ED, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:KaptonCable Allocated a Color: r:26 g:26 b:26, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Al Allocated a Color: r:FF g:FF b:DD, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:HybridFlex Allocated a Color: r:8C g:87 b:82, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Asic Allocated a Color: r:FF g:68 b:B5, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Stiffener Allocated a Color: r:93 g:BC b:E0, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:UP of type LHCb_UP_v1_0 [tracker]
+Compact                                INFO ++ Converted subdetector:PipeBeforeVelo of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeBeforeVeloSupFix of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeBeforeMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:TVUpStreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VeloDownStreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeInUP of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAA of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:Magnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeMagnet-Support of type DD4hep_VolumeAssembly 
+VisAttr                                INFO +++ FT:Module Allocated a Color: r:E5 g:33 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ FT:Core Allocated a Color: r:00 g:4C b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ FT:Core1 Allocated a Color: r:7F g:00 b:33, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:FT of type LHCb_FT_geo_v1_0 [tracker]
+VisAttr                                INFO +++ MP:MT Allocated a Color: r:00 g:99 b:E0, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:Silicon Allocated a Color: r:B2 g:72 b:A5, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:Enclosure Allocated a Color: r:D1 g:B5 b:8C, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:ServicesData Allocated a Color: r:3F g:FC b:FF, this will not save to a ROOT file
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule1             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule2             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule3             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule5             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule6             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule7             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule9             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule10            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule17            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule18            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule19            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule21            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule22            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule23            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule25            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule26            
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol1                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol2                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol3                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol4                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol5                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol6                
+MP-geo                              SUCCESS +++ Building CFrame type: lvMPCFrameSolid
+MP-geo                              SUCCESS +++ Building CFrame Half:   lvMPCFrameLayer         
+MP-geo                              SUCCESS +++ Building layer:   lvLayer                 
+MP-geo                              SUCCESS +++ Building enclosure: lvMPEnclosureHalf
+MP-geo                              SUCCESS +++ Building Enclosure Box:   lvMPEnclosureBoxSpaceHalf
+MP-geo                              SUCCESS +++ Building patch panel: lvMPServicePPHalf
+MP-geo                              SUCCESS +++ Building lower patch panel: lvMPServicePPLowHalf
+MP-geo                              SUCCESS +++ Building Top Right PP: lvMPServicePPTRHalf
+MP-geo                              SUCCESS +++ Building bot left PP: lvMPServicePPTRLowHalf
+MP-geo                              SUCCESS +++ Building Patch Panel Layer: lvMPPatchPanelLayerHalf 
+MP-geo                              SUCCESS +++ Building support type: lvMPSupportStructureHalf
+MP-geo                              SUCCESS +++ Building Support Layers:   lvMPSupportLayerHalf    
+MP-geo                              SUCCESS +++ Building Exterior CO2 supply lines type: lvMPCO2ExteriorSupplyHalf
+MP-geo                              SUCCESS +++ Building Exterior CO2 exhaust lines type: lvMPCO2ExteriorExhaustHalf
+MP-geo                              SUCCESS +++ Building Interior CO2 supply lines type: lvMPCO2InteriorSupplyHalf
+MP-geo                              SUCCESS +++ Building Interior CO2 exhaust lines type: lvMPCO2InteriorExhaustHalf
+MP-geo                              SUCCESS +++ Building CO2 manifold type: lvMPCO2ManifoldHalf
+MP-geo                              SUCCESS +++ Building CO2 distribution type: lvMPCO2DistributionHalf
+MP-geo                              SUCCESS +++ Building Cooling Layer: lvMPCoolingLayerHalf    
+MP-geo                              SUCCESS +++ Building Low Volt Services type: lvMPServicesLowVoltHalf
+MP-geo                              SUCCESS +++ Building Ribbon type: lvMPServicesRibbonHalf
+MP-geo                              SUCCESS +++ Building Fiber Services type: lvMPServicesDataFibersHalf
+MP-geo                              SUCCESS +++ Building Fiber Fanout type: lvMPServicesDataFibersFanOutHalf
+MP-geo                              SUCCESS +++ Building Ribbon Layer: lvMPServicesLayerHalf   
+MP-geo                              SUCCESS +++ Building station type: lvStationHalf
+MP-geo                              SUCCESS Layer 0 z=5.000 -z=1.400 +z=8.600 [cm]
+MP-geo                              SUCCESS +++ Building enclosure: lvMPEnclosureFull
+MP-geo                              SUCCESS +++ Building Enclosure Box:   lvMPEnclosureBoxSpaceFull
+MP-geo                              SUCCESS +++ Building patch panel: lvMPServicePPFull
+MP-geo                              SUCCESS +++ Building lower patch panel: lvMPServicePPLowFull
+MP-geo                              SUCCESS +++ Building Top Right PP: lvMPServicePPTRFull
+MP-geo                              SUCCESS +++ Building bot left PP: lvMPServicePPTRLowFull
+MP-geo                              SUCCESS +++ Building Patch Panel Layer: lvMPPatchPanelLayerFull 
+MP-geo                              SUCCESS +++ Building support type: lvMPSupportStructureFull
+MP-geo                              SUCCESS +++ Building Support Layers:   lvMPSupportLayerFull    
+MP-geo                              SUCCESS +++ Building Exterior CO2 supply lines type: lvMPCO2ExteriorSupplyFull
+MP-geo                              SUCCESS +++ Building Exterior CO2 exhaust lines type: lvMPCO2ExteriorExhaustFull
+MP-geo                              SUCCESS +++ Building Interior CO2 supply lines type: lvMPCO2InteriorSupplyFull
+MP-geo                              SUCCESS +++ Building Interior CO2 exhaust lines type: lvMPCO2InteriorExhaustFull
+MP-geo                              SUCCESS +++ Building CO2 manifold type: lvMPCO2ManifoldFull
+MP-geo                              SUCCESS +++ Building CO2 distribution type: lvMPCO2DistributionFull
+MP-geo                              SUCCESS +++ Building Cooling Layer: lvMPCoolingLayerFull    
+MP-geo                              SUCCESS +++ Building Low Volt Services type: lvMPServicesLowVoltFull
+MP-geo                              SUCCESS +++ Building Ribbon type: lvMPServicesRibbonFull
+MP-geo                              SUCCESS +++ Building Fiber Services type: lvMPServicesDataFibersFull
+MP-geo                              SUCCESS +++ Building Fiber Fanout type: lvMPServicesDataFibersFanOutFull
+MP-geo                              SUCCESS +++ Building Ribbon Layer: lvMPServicesLayerFull   
+MP-geo                              SUCCESS +++ Building station type: lvStationFull
+MP-geo                              SUCCESS Layer 0 z=-80.000 -z=-83.600 +z=-76.400 [cm]
+MP-geo                              SUCCESS Layer 3 z=80.000 -z=76.400 +z=83.600 [cm]
+MP-geo                              SUCCESS +++ Position station MP1 of type lvStationHalf
+MP-geo                              SUCCESS +++ Position station MP2 of type lvStationFull
+MP-geo                              SUCCESS +++ Position station MP3 of type lvStationFull
+MP-geo                              SUCCESS +++ Position station MP4 of type lvStationHalf
+Compact                                INFO ++ Converted subdetector:MP of type LHCb_MP_DetailedGeo [tracker]
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichMatDir/RichMaterialTabProperty.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichMatDir/RichMaterials.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/GeomParam/Rich1GeometryParameters.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichVisDir/Rich1VisAttrDef.xml.
+VisAttr                                INFO +++ Rich:VisRichSystem Allocated a Color: r:7F g:CC b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasEnclosure Allocated a Color: r:66 g:4C b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SecMirrMaster Allocated a Color: r:66 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SphMirrSegment Allocated a Color: r:33 g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SecMirrSegment Allocated a Color: r:B2 g:33 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasEnclWall Allocated a Color: r:4C g:7F b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2EntryWindowSkin Allocated a Color: r:B2 g:66 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2EntryWindowPMI Allocated a Color: r:19 g:B2 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWindowSkin Allocated a Color: r:99 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWindowPMI Allocated a Color: r:4C g:66 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWinTubeLock Allocated a Color: r:7F g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasQW Allocated a Color: r:19 g:33 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2PhDetGasEncl Allocated a Color: r:19 g:99 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrAirTrapRight Allocated a Color: r:7F g:33 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrAirTrapLeft Allocated a Color: r:B2 g:66 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrRod Allocated a Color: r:4C g:99 b:99, this will not save to a ROOT file
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichSurfaceParam.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichPMTSurfaceTabProperty.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichPMTSurfaces.xml.
+Compact                                INFO ++ Converted subdetector:Rich2 of type LHCb_Rich2_Geometry_RUN3_v2 
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Pipe/proto-run5-v00.00/AfterMagnet-Params.xml.
+Compact                                INFO ++ Converted subdetector:PipeAfterMagnetBakeout of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeInT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeAfterT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeSupportAfterT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:NeutronShielding of type DD4hep_VolumeAssembly 
+VisAttr                                INFO +++ MUON:CopperLayerVis Allocated a Color: r:FF g:4C b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:G10LayerVis Allocated a Color: r:19 g:19 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:FrameVis Allocated a Color: r:4C g:4C b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:ChamberVis Allocated a Color: r:84 g:3A b:0C, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:SupportVis Allocated a Color: r:A8 g:AA b:B5, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:Gap Allocated a Color: r:7F g:19 b:19, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:Muon of type LHCb_Muon_v1_0 [tracker]
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/PicoCal/proto-run5-v01.00/modules/positions.xml.
+VisAttr                                INFO +++ vPicoCal:PlasticPlate Allocated a Color: r:19 g:E5 b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ vPicoCal:Shield Allocated a Color: r:FF g:7F b:FF, this will not save to a ROOT file
+VisAttr                                INFO +++ vPicoCal:ReadOutBox Allocated a Color: r:CC g:7F b:00, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:PicoCal of type LHCb_PicoCal_v1_0 [calorimeter]
+Compact                                INFO ++ Converted subdetector:DownstreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamPipeBakeout of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamPipeSupport of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeAfterMuon of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAADownstream of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMAAADownstreamVax of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMABJ of type LHCb_Pipe_VMA_v1_0 
+Detector                               INFO +++ Patching names of anonymous shapes....
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Field map location: /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using conditions location: git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using conditions tag: sim11/run5-ideal
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using detector list: [/world, FT, Magnet]
+DetectorDataService                    INFO Using repository git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git, tag:sim11/run5-ideal
+RndmGenSvc.Engine                      INFO Generator engine type:HepRndm::SynchronizedEngine<CLHEP::RanluxEngine>
+RndmGenSvc.Engine                      INFO Current Seed:1234567 Luxury:3
+RndmGenSvc                             INFO Using Random engine:HepRndm::Engine<CLHEP::RanluxEngine>
+RootIOAlg                              INFO DATAFILE='/tmp/xihu/scifi_1p3_slot9.digi'
+HLTControlFlowMgr                      INFO Concurrency level information:
+HLTControlFlowMgr                      INFO  o Number of events slots: 1
+HLTControlFlowMgr                      INFO  o TBB thread pool size:  'ThreadPoolSize':1
+HLTControlFlowMgr                      INFO ---> End of Initialization. This took 62638 ms
+ApplicationMgr                         INFO Application Manager Initialized successfully
+ApplicationMgr                         INFO Application Manager Started successfully
+HLTControlFlowMgr                      INFO Will measure time between events 2 and 18 (stop might be some events later)
+HLTControlFlowMgr                      INFO Starting loop on events
+HLTControlFlowMgr                   SUCCESS Processing event 0 in slot 0
+RootIOAlg                           SUCCESS Reading Event record 1 within /tmp/xihu/scifi_1p3_slot9.digi, 1 overall
+ConditionsMgr                          INFO Created IOV Pool for:run(0):[0-9223372036854775807]
+Align                                  INFO Alignments:(D:1369,C:1369,M:0,*:6845) Effective IOV:run(0):[0-9223372036854775807]  [0.02631 seconds]
+DeMagnetConditionCall                  INFO Loading mag field from /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf
+MagneticFieldExtension                 INFO Scale factor: 1.000000
+MagneticFieldGridReader                INFO Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf/field.v5r0.down.bin
+FTRawBankDecoder                       INFO Conditions DB is compatible with FT bank version 7 and 8.
+DependencyHandler                      INFO Inserted 6 [6] conditions to pool-iov: run(0):[0-9223372036854775807]   [0.00001 seconds]
+DetectorDataService                    INFO +  Created/Accessed a total of 2788 conditions (S:  1391,L:  1391,C:     6,M:0)  Load:0.45387s/4168KB Compute:0.04127s/15056KB
+HLTControlFlowMgr                      INFO Timing started at: 12:48:54
+HLTControlFlowMgr                   SUCCESS Processing event 5 in slot 0
+HLTControlFlowMgr                   SUCCESS Processing event 10 in slot 0
+HLTControlFlowMgr                   SUCCESS Processing event 15 in slot 0
+HLTControlFlowMgr                      INFO Timing stopped at: 12:49:03
+HLTControlFlowMgr                      INFO ---> Loop over 20 Events Finished -  WSS 3578.67, timed 16 Events: 9129 ms, Evts/s = 1.75266
+Gaudi__Histograming__Sink__Root        INFO Completed update of ROOT histograms in: spatial_histos.root
+FTTrackChecker.LoKi::Hybrid::MCTool    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# loaded from PYTHON"                          |        60 |
+HLTControlFlowMgr                      INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Processed events"                              |        20 |
+PrHybridSeeding_edfd500a               INFO Number of counters : 21
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Created T2x1 three-hit combinations in case 0" |    292555 |     219515 |    0.75034 |    0.87850 |      0.0000 |      11.000 |
+ | "Created T2x1 three-hit combinations in case 1" |    594227 |     538408 |    0.90606 |     1.1361 |      0.0000 |      20.000 |
+ | "Created T2x1 three-hit combinations in case 2" |   1038699 |    1302312 |     1.2538 |     1.6577 |      0.0000 |      44.000 |
+ | "Created XZ tracks (part 0)"                    |        60 |      63603 |     1060.0 |     936.15 |      88.000 |      5133.0 |
+ | "Created XZ tracks (part 1)"                    |        60 |      69875 |     1164.6 |     1023.1 |      166.00 |      5336.0 |
+ | "Created XZ tracks in case 0"                   |        40 |      16364 |     409.10 |     231.27 |      88.000 |      1237.0 |
+ | "Created XZ tracks in case 1"                   |        40 |      49158 |     1229.0 |     772.37 |      243.00 |      3798.0 |
+ | "Created XZ tracks in case 2"                   |        40 |      67956 |     1698.9 |     1179.3 |      316.00 |      5336.0 |
+ | "Created full hit combinations in case 0"       |     35288 |      35288 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created full hit combinations in case 1"       |     64426 |      64426 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created full hit combinations in case 2"       |    116326 |     116326 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ | "Created seed tracks"                           |        40 |       6873 |     171.82 |     48.187 |      100.00 |      324.00 |
+ | "Created seed tracks (part 0)"                  |        20 |       3798 |     189.90 |     47.822 |      114.00 |      313.00 |
+ | "Created seed tracks (part 1)"                  |        20 |       4015 |     200.75 |     59.295 |      129.00 |      372.00 |
+ | "Created seed tracks in case 0"                 |        40 |       2032 |     50.800 |     14.391 |      31.000 |      89.000 |
+ | "Created seed tracks in case 1"                 |        40 |       5191 |     129.78 |     32.586 |      79.000 |      238.00 |
+ | "Created seed tracks in case 2"                 |        40 |       6886 |     172.15 |     53.353 |      98.000 |      356.00 |
+ | "Created seed tracks in recovery step"          |        20 |        927 |     46.350 |     9.7174 |      31.000 |      65.000 |
+ | "Created two-hit combinations in case 0"        |     16223 |     829100 |     51.106 |     19.586 |      5.0000 |      113.00 |
+ | "Created two-hit combinations in case 1"        |     15996 |    1307505 |     81.739 |     30.560 |      11.000 |      231.00 |
+ | "Created two-hit combinations in case 2"        |     12959 |    1763758 |     136.10 |     52.965 |      17.000 |      284.00 |
+PrLHCbID2MCParticleFT_cbc493b7         INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "#removed null MCParticles"                     |    184694 |          0 |     0.0000 |
+PrStoreSciFiTimeHits_9885bdc3          INFO Number of counters : 25
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Average X in T1U"                              |     14929 |    -371813 |    -24.905 |     1260.5 |     -2656.0 |      2653.7 |
+ | "Average X in T1V"                              |     15412 |  -113151.5 |    -7.3418 |     1277.2 |     -2655.7 |      2656.4 |
+ | "Average X in T1X1"                             |     14768 |  -462561.9 |    -31.322 |     1263.2 |     -2645.6 |      2645.7 |
+ | "Average X in T1X2"                             |     15639 |   125212.7 |     8.0064 |     1283.5 |     -2646.2 |      2646.2 |
+ | "Average X in T2U"                              |     13739 |    -436115 |    -31.743 |     1399.6 |     -2655.5 |      2654.7 |
+ | "Average X in T2V"                              |     13966 |  -313950.4 |    -22.480 |     1388.2 |     -2655.8 |      2656.0 |
+ | "Average X in T2X1"                             |     13376 |  -580474.7 |    -43.397 |     1387.5 |     -2646.2 |      2646.1 |
+ | "Average X in T2X2"                             |     14302 |  -495157.2 |    -34.622 |     1376.4 |     -2644.9 |      2645.9 |
+ | "Average X in T3U"                              |     16929 |   170468.1 |     10.070 |     1605.4 |     -3188.4 |      3188.1 |
+ | "Average X in T3V"                              |     17353 |   69117.88 |     3.9831 |     1600.2 |     -3188.2 |      3186.7 |
+ | "Average X in T3X1"                             |     16588 |    -150897 |    -9.0968 |     1609.3 |     -3175.1 |      3176.1 |
+ | "Average X in T3X2"                             |     17693 |  -414568.9 |    -23.431 |     1605.9 |     -3175.1 |      3176.1 |
+ | "Hits in T1U"                                   |        80 |      14929 |     186.61 |     28.731 |      134.00 |      276.00 |
+ | "Hits in T1V"                                   |        80 |      15412 |     192.65 |     29.788 |      128.00 |      298.00 |
+ | "Hits in T1X1"                                  |        80 |      14768 |     184.60 |     27.248 |      136.00 |      254.00 |
+ | "Hits in T1X2"                                  |        80 |      15639 |     195.49 |     32.488 |      132.00 |      304.00 |
+ | "Hits in T2U"                                   |        80 |      13739 |     171.74 |     32.884 |      110.00 |      254.00 |
+ | "Hits in T2V"                                   |        80 |      13966 |     174.57 |     34.192 |      110.00 |      288.00 |
+ | "Hits in T2X1"                                  |        80 |      13376 |     167.20 |     32.430 |      115.00 |      259.00 |
+ | "Hits in T2X2"                                  |        80 |      14302 |     178.78 |     32.044 |      121.00 |      267.00 |
+ | "Hits in T3U"                                   |        80 |      16929 |     211.61 |     36.730 |      135.00 |      295.00 |
+ | "Hits in T3V"                                   |        80 |      17353 |     216.91 |     39.682 |      137.00 |      314.00 |
+ | "Hits in T3X1"                                  |        80 |      16588 |     207.35 |     38.201 |      140.00 |      317.00 |
+ | "Hits in T3X2"                                  |        80 |      17693 |     221.16 |     37.857 |      155.00 |      297.00 |
+ | "Total number of hits"                          |        20 |     184694 |     9234.7 |     1275.8 |      7163.0 |      11950. |
+PrTrackAssociator_ed8880da             INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"Efficiency"                                    |      6873 |       5104 |( 74.26160 +- 0.5273510)% |
+ | "MC particles per track"                        |      5104 |       5104 |     1.0000 |
+SciFiTimeKalman_5d2db9bc               INFO Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Input tracks"                                  |      6873 |
+ | "Output tracks"                                 |      6873 |
+Unpack__Event_MC_FT_Hits               INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |        20 |     196550 |     9827.5 |     1539.6 |      7494.0 |      13164. |
+Unpack__Event_MC_MP_Hits               INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |        20 |     118659 |     5932.9 |     959.82 |      4313.0 |      8118.0 |
+Unpack__Event_MC_TV_Hits               INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |        20 |     228565 |     11428. |     1726.1 |      9101.0 |      15552. |
+Unpack__Event_MC_UP_Hits               INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |        20 |     113599 |     5679.9 |     942.10 |      4422.0 |      7816.0 |
+fromPrSeedingTracksV1Tracks_94e6...    INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Nb of converted Tracks"                        |        20 |       6873 |     343.65 |
+ApplicationMgr                         INFO Application Manager Stopped successfully
+FTTrackChecker                         INFO Results
+FTTrackChecker                         INFO **** FT                                  6873 tracks including           1769 ghosts [25.74 %], Event average 23.51 % ****
+FTTrackChecker                         INFO   01_hasT                           :    4137 from    11553 [ 35.81 %]      2 clones [ 0.05 %], purity: 98.88 %, hitEff: 95.72 %
+FTTrackChecker                         INFO   01_hasT_FT                        :    4078 from     4989 [ 81.74 %]      2 clones [ 0.05 %], purity: 99.10 %, hitEff: 95.72 %
+FTTrackChecker                         INFO   01_hasT_MP                        :      37 from     6010 [  0.62 %]      0 clones [ 0.00 %], purity: 85.54 %, hitEff: 96.43 %
+FTTrackChecker                         INFO   02_long                           :    3078 from     7382 [ 41.70 %]      1 clones [ 0.03 %], purity: 99.04 %, hitEff: 96.52 %
+FTTrackChecker                         INFO   02_long_FT                        :    3033 from     3408 [ 89.00 %]      1 clones [ 0.03 %], purity: 99.28 %, hitEff: 96.53 %
+FTTrackChecker                         INFO   02_long_MP                        :      28 from     3757 [  0.75 %]      0 clones [ 0.00 %], purity: 84.19 %, hitEff: 96.01 %
+FTTrackChecker                         INFO   03_long_P>5GeV                    :    1393 from     4711 [ 29.57 %]      0 clones [ 0.00 %], purity: 99.14 %, hitEff: 98.06 %
+FTTrackChecker                         INFO   03_long_P>5GeV_FT                 :    1374 from     1446 [ 95.02 %]      0 clones [ 0.00 %], purity: 99.40 %, hitEff: 98.07 %
+FTTrackChecker                         INFO   03_long_P>5GeV_MP                 :      19 from     3206 [  0.59 %]      0 clones [ 0.00 %], purity: 82.05 %, hitEff: 97.19 %
+FTTrackChecker                         INFO   04_long_fromB                     :       4 from        6 [ 66.67 %]      0 clones [ 0.00 %], purity: 97.50 %, hitEff: 96.15 %
+FTTrackChecker                         INFO   04_long_fromB_FT                  :       3 from        4 [ 75.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff: 94.87 %
+FTTrackChecker                         INFO   04_long_fromB_MP                  :       1 from        1 [100.00 %]      0 clones [ 0.00 %], purity: 90.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   05_long_fromB_P>5GeV              :       4 from        4 [100.00 %]      0 clones [ 0.00 %], purity: 97.50 %, hitEff: 96.15 %
+FTTrackChecker                         INFO   05_long_fromB_P>5GeV_FT           :       3 from        3 [100.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff: 94.87 %
+FTTrackChecker                         INFO   05_long_fromB_P>5GeV_MP           :       1 from        1 [100.00 %]      0 clones [ 0.00 %], purity: 90.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   06_UT+T_strange                   :     400 from      825 [ 48.48 %]      0 clones [ 0.00 %], purity: 98.94 %, hitEff: 95.53 %
+FTTrackChecker                         INFO   06_UT+T_strange_FT                :     396 from      456 [ 86.84 %]      0 clones [ 0.00 %], purity: 99.04 %, hitEff: 95.48 %
+FTTrackChecker                         INFO   06_UT+T_strange_MP                :       6 from      338 [  1.78 %]      0 clones [ 0.00 %], purity: 93.15 %, hitEff: 95.45 %
+FTTrackChecker                         INFO   07_UT+T_strange_P>5GeV            :     125 from      391 [ 31.97 %]      0 clones [ 0.00 %], purity: 98.73 %, hitEff: 97.69 %
+FTTrackChecker                         INFO   07_UT+T_strange_P>5GeV_FT         :     122 from      129 [ 94.57 %]      0 clones [ 0.00 %], purity: 98.96 %, hitEff: 97.64 %
+FTTrackChecker                         INFO   07_UT+T_strange_P>5GeV_MP         :       3 from      255 [  1.18 %]      0 clones [ 0.00 %], purity: 92.96 %, hitEff:100.00 %
+FTTrackChecker                         INFO   08_noVelo+UT+T_strange            :     208 from      417 [ 49.88 %]      0 clones [ 0.00 %], purity: 99.25 %, hitEff: 96.06 %
+FTTrackChecker                         INFO   08_noVelo+UT+T_strange_FT         :     207 from      245 [ 84.49 %]      0 clones [ 0.00 %], purity: 99.30 %, hitEff: 96.04 %
+FTTrackChecker                         INFO   08_noVelo+UT+T_strange_MP         :       3 from      162 [  1.85 %]      0 clones [ 0.00 %], purity: 96.67 %, hitEff:100.00 %
+FTTrackChecker                         INFO   09_noVelo+UT+T_strange_P>5GeV     :      82 from      205 [ 40.00 %]      0 clones [ 0.00 %], purity: 99.10 %, hitEff: 98.10 %
+FTTrackChecker                         INFO   09_noVelo+UT+T_strange_P>5GeV_FT  :      81 from       84 [ 96.43 %]      0 clones [ 0.00 %], purity: 99.21 %, hitEff: 98.08 %
+FTTrackChecker                         INFO   09_noVelo+UT+T_strange_P>5GeV_MP  :       1 from      119 [  0.84 %]      0 clones [ 0.00 %], purity: 90.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   10_UT+T_SfromDB                   :       3 from        8 [ 37.50 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   10_UT+T_SfromDB_FT                :       3 from        3 [100.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   10_UT+T_SfromDB_MP                :       0 from        3 [  0.00 %]      0 clones [ 0.00 %], purity:  0.00 %, hitEff:  0.00 %
+FTTrackChecker                         INFO   11_UT+T_SfromDB_P>5GeV            :       2 from        5 [ 40.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   11_UT+T_SfromDB_P>5GeV_FT         :       2 from        2 [100.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   11_UT+T_SfromDB_P>5GeV_MP         :       0 from        3 [  0.00 %]      0 clones [ 0.00 %], purity:  0.00 %, hitEff:  0.00 %
+FTTrackChecker                         INFO   12_noVelo+UT+T_SfromDB_P>5GeV     :       2 from        4 [ 50.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   12_noVelo+UT+T_SfromDB_P>5GeV_FT  :       2 from        2 [100.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   12_noVelo+UT+T_SfromDB_P>5GeV_MP  :       0 from        2 [  0.00 %]      0 clones [ 0.00 %], purity:  0.00 %, hitEff:  0.00 %
+FTTrackChecker                         INFO   13_hasT_electrons                 :     552 from     3709 [ 14.88 %]      0 clones [ 0.00 %], purity: 98.09 %, hitEff: 91.61 %
+FTTrackChecker                         INFO   13_hasT_electrons_FT              :     533 from     1229 [ 43.37 %]      0 clones [ 0.00 %], purity: 98.52 %, hitEff: 91.46 %
+FTTrackChecker                         INFO   13_hasT_electrons_MP              :       6 from     2124 [  0.28 %]      0 clones [ 0.00 %], purity: 91.82 %, hitEff: 95.00 %
+FTTrackChecker                         INFO   14_long_electrons                 :      80 from      306 [ 26.14 %]      0 clones [ 0.00 %], purity: 99.15 %, hitEff: 94.56 %
+FTTrackChecker                         INFO   14_long_electrons_FT              :      77 from      106 [ 72.64 %]      0 clones [ 0.00 %], purity: 99.67 %, hitEff: 94.51 %
+FTTrackChecker                         INFO   14_long_electrons_MP              :       0 from      166 [  0.00 %]      0 clones [ 0.00 %], purity:  0.00 %, hitEff:  0.00 %
+FTTrackChecker                         INFO   16_long_electrons_P>5GeV          :      17 from      150 [ 11.33 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff: 99.10 %
+FTTrackChecker                         INFO   16_long_electrons_P>5GeV_FT       :      17 from       24 [ 70.83 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff: 99.10 %
+FTTrackChecker                         INFO   16_long_electrons_P>5GeV_MP       :       0 from      117 [  0.00 %]      0 clones [ 0.00 %], purity:  0.00 %, hitEff:  0.00 %
+FTTrackChecker                         INFO   18_hasT_P>5GeV                    :    1636 from     6004 [ 27.25 %]      0 clones [ 0.00 %], purity: 99.07 %, hitEff: 97.96 %
+FTTrackChecker                         INFO   18_hasT_P>5GeV_FT                 :    1613 from     1727 [ 93.40 %]      0 clones [ 0.00 %], purity: 99.32 %, hitEff: 97.98 %
+FTTrackChecker                         INFO   18_hasT_P>5GeV_MP                 :      21 from     4187 [  0.50 %]      0 clones [ 0.00 %], purity: 82.33 %, hitEff: 97.46 %
+FTTrackChecker                         INFO   19_hasT_fromB_P>5GeV              :       4 from        5 [ 80.00 %]      0 clones [ 0.00 %], purity: 97.50 %, hitEff: 96.15 %
+FTTrackChecker                         INFO   19_hasT_fromB_P>5GeV_FT           :       3 from        4 [ 75.00 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff: 94.87 %
+FTTrackChecker                         INFO   19_hasT_fromB_P>5GeV_MP           :       1 from        1 [100.00 %]      0 clones [ 0.00 %], purity: 90.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO   20_hasT_fromD_P>5GeV              :      37 from       88 [ 42.05 %]      0 clones [ 0.00 %], purity: 99.75 %, hitEff: 98.02 %
+FTTrackChecker                         INFO   20_hasT_fromD_P>5GeV_FT           :      37 from       40 [ 92.50 %]      0 clones [ 0.00 %], purity: 99.75 %, hitEff: 98.02 %
+FTTrackChecker                         INFO   20_hasT_fromD_P>5GeV_MP           :       1 from       48 [  2.08 %]      0 clones [ 0.00 %], purity:100.00 %, hitEff:100.00 %
+FTTrackChecker                         INFO 
+HLTControlFlowMgr                      INFO Memory pool: used 1.8083 +/- 0.0012206 MiB (min: 1, max: 1) in 1 +/- 0 blocks (allocated >once in 0 +/- 0% events). Allocated capacity was 10 +/- 0 MiB (min: 10, max: 10) and 9 +/- 0 (min: 9, max: 9) requests were served
+HLTControlFlowMgr                      INFO Timing table:
+HLTControlFlowMgr                      INFO 
+ | Name of Algorithm                                    | Execution Count | Total Time / s  | Avg. Time / us   |
+ | Sum of all Algorithms                                |              20 |          40.971 |      2048562.050 |
+ | "RootIOAlg"                                          |              20 |          28.793 |      1439652.981 |
+ | "SciFiTimeKalman_5d2db9bc"                           |              20 |           8.765 |       438226.026 |
+ | "FTTrackChecker"                                     |              20 |           1.690 |        84481.838 |
+ | "PrHybridSeeding_edfd500a"                           |              20 |           0.504 |        25216.919 |
+ | "ReserveIOVDD4hep"                                   |              20 |           0.495 |        24773.351 |
+ | "PrStoreSciFiTimeHits_9885bdc3"                      |              20 |           0.239 |        11955.747 |
+ | "MCTrackInfoCreator_f3c6ffba"                        |              20 |           0.174 |         8724.559 |
+ | "Unpack__Event_MC_Vertices"                          |              20 |           0.119 |         5945.177 |
+ | "Unpack__Event_MC_Particles"                         |              20 |           0.107 |         5366.662 |
+ | "PrLHCbID2MCParticleFT_cbc493b7"                     |              20 |           0.032 |         1606.620 |
+ | "Unpack__Event_MC_TV_Hits"                           |              20 |           0.010 |          477.918 |
+ | "Unpack__Event_MC_FT_Hits"                           |              20 |           0.008 |          409.716 |
+ | "PrTrackAssociator_ed8880da"                         |              20 |           0.008 |          381.297 |
+ | "LHCb__Converters__fromV1TrackFutureTrack_713dd446"  |              20 |           0.007 |          348.561 |
+ | "FTRawBankDecoder"                                   |              20 |           0.006 |          284.801 |
+ | "Unpack__Event_MC_MP_Hits"                           |              20 |           0.005 |          262.732 |
+ | "Unpack__Event_MC_UP_Hits"                           |              20 |           0.005 |          233.714 |
+ | "fromPrSeedingTracksV1Tracks_94e6170d"               |              20 |           0.004 |          182.013 |
+ | "UnpackRawEvent_ODIN"                                |              20 |           0.000 |           14.128 |
+ | "Decode_ODIN"                                        |              20 |           0.000 |           12.270 |
+ | "FakeRunNumberProducer"                              |              20 |           0.000 |            3.257 |
+ | "UnpackRawEvent_FTCluster"                           |              20 |           0.000 |            2.227 |
+
+HLTControlFlowMgr                      INFO StateTree: CFNode   #executed  #passed
+LAZY_AND: scifi_time_kalman_decision    #=20      Sum=20          Eff=|( 100.0000 +- 0.00000 )%|
+ NONLAZY_OR: scifi_time_kalman_data     #=20      Sum=20          Eff=|( 100.0000 +- 0.00000 )%|
+  PrTrackChecker_future/FTTrackChecker  #=20      Sum=20          Eff=|( 100.0000 +- 0.00000 )%|
+
+HLTControlFlowMgr                      INFO Histograms converted successfully according to request.
+ToolSvc                                INFO Removing all tools created by ToolSvc
+FTTrackChecker.PrCheckerHistos      SUCCESS Booked 2067 Histogram(s) : 1D=1478 2D=589 
+ConditionsPool                         INFO +++ Remove Conditions for pool with IOV: run(0):[0-9223372036854775807]   age:  0 [2766 entries]
+ChronoStatSvc.finalize()               INFO  Service finalized successfully 
+ApplicationMgr                         INFO Application Manager Finalized successfully
+ApplicationMgr                         INFO Application Manager Terminated successfully

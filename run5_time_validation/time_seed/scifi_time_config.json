@@ -1,0 +1,8 @@
+{
+  "events": 20,
+  "time_seeding": true,
+  "time_kalman": false,
+  "fit": false,
+  "tag": "time_seed",
+  "input_file": "/tmp/xihu/scifi_1p3_slot9.digi"
+}

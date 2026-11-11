@@ -1,0 +1,8 @@
+{
+  "events": 20,
+  "time_seeding": false,
+  "time_kalman": false,
+  "fit": true,
+  "tag": "spatial",
+  "input_file": "/tmp/xihu/scifi_1p3_slot9.digi"
+}

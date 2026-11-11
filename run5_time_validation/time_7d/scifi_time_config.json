@@ -1,0 +1,9 @@
+{
+  "events": 20,
+  "time_seeding": true,
+  "time_kalman": true,
+  "fit": true,
+  "tag": "time_7d",
+  "input_file": "/tmp/xihu/scifi_1p3_slot9.digi",
+  "fit_output_level": 3
+}

@@ -1,0 +1,26 @@
+Internal ctest changing into directory: /afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter
+UpdateCTestConfiguration  from :/afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter/DartConfiguration.tcl
+Test project /afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: TrackFitter.test_SciFiTimeKalman
+
+1: Test command: /afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/toolchain/wrapper "/afs/cern.ch/work/x/xihu/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/run" "/afs/cern.ch/work/x/xihu/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter/test_SciFiTimeKalman"
+1: Working Directory: /afs/cern.ch/user/x/xihu/workspace/stack/stack/Rec/build.x86_64_v3-el9-gcc15-opt/Tr/TrackFitter
+1: Test timeout computed to be: 10000000
+1: SciFi 7D core: update, covariance, Jacobians, reverse transport, smoothing, velocity, coupling and seed normalization and timing pull coverage passed
+1/1 Test #1: TrackFitter.test_SciFiTimeKalman ...   Passed    0.25 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+Rec            =   0.25 sec*proc (1 test)
+TrackFitter    =   0.25 sec*proc (1 test)
+
+Total Test time (real) =   0.34 sec

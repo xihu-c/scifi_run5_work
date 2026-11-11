@@ -1,0 +1,5 @@
+{
+  "invalid fitted velocity": 35,
+  "invalid posterior state or covariance": 5,
+  "singular covariance": 1
+}
