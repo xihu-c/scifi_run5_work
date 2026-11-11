@@ -16,9 +16,8 @@ resolution is; every `sigma_t` below is a placeholder.
 3 stations (T1,T2,T3) x 4 layers in the order X1, U, V, X2, i.e. 12 layers:
 6 x-layers (angle 0), 3 U-layers (-5 deg), 3 V-layers (+5 deg). No layer measures y directly.
 
-**Each hit i is one 1-D measurement** $u_i$ in layer $l(i)$ at known $z_i$:
-
-$$u_i = x_i^0 + y_i \cdot \text{dxdy}_l, \quad \text{dxdy}_l = \begin{cases} 0 & \text{(X)} \\ \tan(\theta_l) & \text{(U,V)} \end{cases}, \quad \theta = \pm 5°$$
+**Each hit i is one 1-D measurement** $u_i$ in layer $l(i)$ at known $z_i$: for X layer, $u_i = x_i$; 
+$$u_i = x_i^0 + y_i \cdot \text{(dx/dy)}_l, \quad \text{(dx/dy)}_l =  \tan(\theta_l) \quad \text{(U,V layers)}, \quad \theta = \pm 5^\circ$$
 
 (`x_i^0` is the hit position at y=0, `dxdy` the layer slope; in the code `sciFiHits.x(i, y)` and `dxdy`.)
 So a seed with N hits has N position measurements, not 3N. y enters only through stereo layers.
@@ -54,16 +53,16 @@ Parameters: $(a_x, b_x, c_x, a_y, b_y)$ = 5.
    $$\chi^2_{xz} = \sum_{i \in X} w_i (u_i - x(z_i))^2$$
    Candidates are first built from hit combinations in T1/T3 plus a parabola search (Hough-like).
 2. **Add stereo hits.** For each U/V layer predict $x_{\text{pred}}$, accept hits with $u_i$ in a window
-   $[x_{\text{pred}} - y_{\max}\cdot\text{dxdy}, x_{\text{pred}} - y_{\min}\cdot\text{dxdy}]$.
+   $[x_{\text{pred}} - y_{\max}\cdot\text{(dx/dy)}, x_{\text{pred}} - y_{\min}\cdot\text{(dx/dy)}]$.
 3. **y-z fit** (`PrTrackFitterYZ.h`), 2 parameters ($a_y$, $b_y$). The stereo hit measures
-   $u_i = x(z_i) + y(z_i) \text{dxdy}_l$, so with $x(z)$ fixed from step 1:
+   $u_i = x(z_i) + y(z_i) \text{(dx/dy)}_l$, so with $x(z)$ fixed from step 1:
 
-$$\frac{u_i - x(z_i)}{\text{dxdy}_l} = a_y + b_y \cdot dz_i, \quad \text{weight} \quad w_i \cdot \text{dxdy}_l^2$$
-$$\chi^2_{yz} = \sum_{i \in U,V} w_i \left( u_i - x(z_i) - \text{dxdy}_l (a_y + b_y dz_i) \right)^2$$
+$$\frac{u_i - x(z_i)}{\text{(dx/dy)}_l} = a_y + b_y \cdot dz_i, \quad \text{weight} \quad w_i \cdot \text{(dx/dy)}_l^2$$
+$$\chi^2_{yz} = \sum_{i \in U,V} w_i \left( u_i - x(z_i) - \text{(dx/dy)}_l (a_y + b_y dz_i) \right)^2$$
 
 4. **Full XYZ fit** (`PrTrackFitterXYZ.h`), all 5 parameters on all $N$ hits:
 
-$$\chi^2_5 = \sum_i w_i \left( u_i - x(z_i) - \text{dxdy}_l(i) \cdot y(z_i) \right)^2, \quad \text{dof} = N - 5$$
+$$\chi^2_5 = \sum_i w_i \left( u_i - x(z_i) - \text{(dx/dy)}_l(i) \cdot y(z_i) \right)^2, \quad \text{dof} = N - 5$$
 
    (iterated, removing the worst hit while chi2/dof or per-hit chi2 is too large).
 5. Output a track with state at $z_{\text{ref}}$: $(x=a_x, y=a_y, t_x=b_x, t_y=b_y, \text{curvature from } c_x)$; momentum from
@@ -176,7 +175,7 @@ $$t(z) = a_t + b_t dz + \tau\left(y(z)\right)$$
 
 Measurement vector per hit: $(u_i, t_i)$, with the model
 
-$$u_i : x(z_i) + \text{dxdy}_l(i) \cdot y(z_i)$$
+$$u_i : x(z_i) + \text{(dx/dy)}_l(i) \cdot y(z_i)$$
 $$t_i : a_t + b_t dz_i + \frac{s_i}{v_f}\left(Y_{\text{ro}} - a_y - b_y dz_i\right) \quad (s_i = \pm 1 \text{ for the readout half})$$
 
 so $b_y$ and $b_t$ mix in the time slope: the effective time slope is $b_t - s_i b_y / v_f$.
@@ -185,7 +184,7 @@ In the joint fit that mixing is harmless because the stereo hits pin $y$ much be
 
 Combined chi2:
 
-$$\chi^2_7 = \sum_i w_i \left( u_i - x(z_i) - \text{dxdy}_l y(z_i) \right)^2 + \sum_i \frac{\left( t_i - a_t - b_t dz_i - \tau_i(a_y,b_y) \right)^2}{\sigma_{t,i}^2} + \frac{(b_t - b_{t,\text{prior}})^2}{\sigma_{b_t}^2}$$
+$$\chi^2_7 = \sum_i w_i \left( u_i - x(z_i) - \text{(dx/dy)}_l y(z_i) \right)^2 + \sum_i \frac{\left( t_i - a_t - b_t dz_i - \tau_i(a_y,b_y) \right)^2}{\sigma_{t,i}^2} + \frac{(b_t - b_{t,\text{prior}})^2}{\sigma_{b_t}^2}$$
 
 (Optional Gaussian prior on $b_t$.)
 
