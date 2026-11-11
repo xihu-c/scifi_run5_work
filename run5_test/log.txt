@@ -1,5 +1,5 @@
 # setting LC_ALL to "C"
-# --> Including file '/afs/cern.ch/work/x/xihu/stack/stack/run5_ft_seeding_test.py'
+# --> Including file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_ft_seeding_test.py'
 /***** User ApplicationOptions/ApplicationOptions **************************************************
 |-append_decoding_keys_to_output_manifest = True  (default: True)
 |-auditors                                = []  (default: [])
@@ -68,7 +68,7 @@
 |-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
 \----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
 # Overrule specified for keys 
-# <-- End of file '/afs/cern.ch/work/x/xihu/stack/stack/run5_ft_seeding_test.py'
+# <-- End of file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_ft_seeding_test.py'
 # Using git repository: git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git
 # /***** Service LHCb::Det::LbDD4hep::DD4hepSvc/LHCb::Det::LbDD4hep::DD4hepSvc ***********************
 # |-OutputLevel               = 0
@@ -102,7 +102,7 @@
 ApplicationMgr     SUCCESS 
 ====================================================================================================================================
                                                    Welcome to Moore version 59.1
-                                          running on lxplus940.cern.ch on Tue Nov 10 07:58:52 2026
+                                          running on lxplus940.cern.ch on Wed Nov 11 08:18:52 2026
 ====================================================================================================================================
 ApplicationMgr        INFO Application Manager Configured successfully
 Gaudi__Histograming__Sink__Root        INFO Writing ROOT histograms to: run5_seeding_histos.root
@@ -355,7 +355,7 @@ RootIOAlg                              INFO DATAFILE='/cvmfs/lhcbdev.cern.ch/tes
 HLTControlFlowMgr                      INFO Concurrency level information:
 HLTControlFlowMgr                      INFO  o Number of events slots: 1
 HLTControlFlowMgr                      INFO  o TBB thread pool size:  'ThreadPoolSize':1
-HLTControlFlowMgr                      INFO ---> End of Initialization. This took 94113 ms
+HLTControlFlowMgr                      INFO ---> End of Initialization. This took 105673 ms
 ApplicationMgr                         INFO Application Manager Initialized successfully
 ApplicationMgr                         INFO Application Manager Started successfully
 HLTControlFlowMgr                      INFO Will measure time between events 2 and 18 (stop might be some events later)
@@ -363,19 +363,19 @@ HLTControlFlowMgr                      INFO Starting loop on events
 HLTControlFlowMgr                   SUCCESS Processing event 0 in slot 0
 RootIOAlg                           SUCCESS Reading Event record 1 within /cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi, 1 overall
 ConditionsMgr                          INFO Created IOV Pool for:run(0):[0-9223372036854775807]
-Align                                  INFO Alignments:(D:1369,C:1369,M:0,*:6845) Effective IOV:run(0):[0-9223372036854775807]  [0.03076 seconds]
+Align                                  INFO Alignments:(D:1369,C:1369,M:0,*:6845) Effective IOV:run(0):[0-9223372036854775807]  [0.03416 seconds]
 DeMagnetConditionCall                  INFO Loading mag field from /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf
 MagneticFieldExtension                 INFO Scale factor: 1.000000
 MagneticFieldGridReader                INFO Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf/field.v5r0.down.bin
 FTRawBankDecoder                       INFO Conditions DB is compatible with FT bank version 7 and 8.
 DependencyHandler                      INFO Inserted 7 [7] conditions to pool-iov: run(0):[0-9223372036854775807]   [0.00001 seconds]
-DetectorDataService                    INFO +  Created/Accessed a total of 2789 conditions (S:  1391,L:  1391,C:     7,M:0)  Load:2.56911s/4168KB Compute:0.77918s/65536KB
-HLTControlFlowMgr                      INFO Timing started at: 08:00:55
+DetectorDataService                    INFO +  Created/Accessed a total of 2789 conditions (S:  1391,L:  1391,C:     7,M:0)  Load:2.56478s/4168KB Compute:0.42347s/65536KB
+HLTControlFlowMgr                      INFO Timing started at: 08:21:15
 HLTControlFlowMgr                   SUCCESS Processing event 5 in slot 0
 HLTControlFlowMgr                   SUCCESS Processing event 10 in slot 0
 HLTControlFlowMgr                   SUCCESS Processing event 15 in slot 0
-HLTControlFlowMgr                      INFO Timing stopped at: 08:00:57
-HLTControlFlowMgr                      INFO ---> Loop over 20 Events Finished -  WSS 3264.64, timed 16 Events: 1385 ms, Evts/s = 11.5523
+HLTControlFlowMgr                      INFO Timing stopped at: 08:21:16
+HLTControlFlowMgr                      INFO ---> Loop over 20 Events Finished -  WSS 3187.37, timed 16 Events: 1431 ms, Evts/s = 11.181
 Gaudi__Histograming__Sink__Root        INFO Completed update of ROOT histograms in: run5_seeding_histos.root
 FTTrackChecker.LoKi::Hybrid::MCTool    INFO Number of counters : 1
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
@@ -383,7 +383,10 @@ FTTrackChecker.LoKi::Hybrid::MCTool    INFO Number of counters : 1
 HLTControlFlowMgr                      INFO Number of counters : 1
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
  | "Processed events"                              |        20 |
-PrHybridSeeding_4d0337cc               INFO Number of counters : 21
+PrFTHitTimesFromFile_5e5ff64b          INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Events without time table"                     |        20 |
+PrHybridSeeding_c81a65a1               INFO Number of counters : 21
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
  | "Created T2x1 three-hit combinations in case 0" |    125910 |      83506 |    0.66322 |    0.70909 |      0.0000 |      7.0000 |
  | "Created T2x1 three-hit combinations in case 1" |    246710 |     188548 |    0.76425 |    0.88275 |      0.0000 |      13.000 |
@@ -436,7 +439,7 @@ PrStoreSciFiHits_fb0eba02              INFO Number of counters : 25
  | "Hits in T3X1"                                  |        80 |      12784 |     159.80 |     38.114 |      77.000 |      253.00 |
  | "Hits in T3X2"                                  |        80 |      13611 |     170.14 |     45.304 |      66.000 |      304.00 |
  | "Total number of hits"                          |        20 |     145621 |     7281.1 |     1447.4 |      4775.0 |      10286. |
-PrTrackAssociator_9b782186             INFO Number of counters : 2
+PrTrackAssociator_426dfac9             INFO Number of counters : 2
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
  |*"Efficiency"                                    |      4723 |       4080 |( 86.38577 +- 0.4990093)% |
  | "MC particles per track"                        |      4080 |       4080 |     1.0000 |
@@ -452,7 +455,7 @@ Unpack__Event_MC_TV_Hits               INFO Number of counters : 1
 Unpack__Event_MC_UP_Hits               INFO Number of counters : 1
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
  | "# UnPackedData"                                |        20 |      89503 |     4475.1 |     973.05 |      2709.0 |      6470.0 |
-fromPrSeedingTracksV1Tracks_84cd...    INFO Number of counters : 1
+fromPrSeedingTracksV1Tracks_bc82...    INFO Number of counters : 1
  |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
  | "Nb of converted Tracks"                        |        20 |       4723 |     236.15 |
 ApplicationMgr                         INFO Application Manager Stopped successfully
@@ -516,28 +519,29 @@ HLTControlFlowMgr                      INFO Memory pool: used 1.60917 +/- 0.0013
 HLTControlFlowMgr                      INFO Timing table:
 HLTControlFlowMgr                      INFO 
  | Name of Algorithm                                    | Execution Count | Total Time / s  | Avg. Time / us   |
- | Sum of all Algorithms                                |              20 |          29.295 |      1464750.700 |
- | "RootIOAlg"                                          |              20 |          23.962 |      1198101.176 |
- | "ReserveIOVDD4hep"                                   |              20 |           3.386 |       169286.060 |
- | "FTTrackChecker"                                     |              20 |           1.280 |        64008.266 |
- | "PrHybridSeeding_4d0337cc"                           |              20 |           0.174 |         8713.307 |
- | "MCTrackInfoCreator_f3c6ffba"                        |              20 |           0.131 |         6547.915 |
- | "Unpack__Event_MC_Vertices"                          |              20 |           0.105 |         5269.456 |
- | "Unpack__Event_MC_Particles"                         |              20 |           0.084 |         4203.659 |
- | "PrTrackAssociator_9b782186"                         |              20 |           0.040 |         1988.241 |
- | "fromPrSeedingTracksV1Tracks_84cd46c2"               |              20 |           0.036 |         1799.873 |
- | "PrLHCbID2MCParticleFT_cbc493b7"                     |              20 |           0.022 |         1110.985 |
- | "FTRawBankDecoder"                                   |              20 |           0.017 |          865.572 |
- | "LHCb__Converters__fromV1TrackFutureTrack_c80139ba"  |              20 |           0.013 |          657.736 |
- | "UnpackRawEvent_ODIN"                                |              20 |           0.012 |          576.000 |
- | "PrStoreSciFiHits_fb0eba02"                          |              20 |           0.011 |          537.457 |
- | "Unpack__Event_MC_TV_Hits"                           |              20 |           0.007 |          357.716 |
- | "Unpack__Event_MC_FT_Hits"                           |              20 |           0.007 |          330.134 |
- | "Unpack__Event_MC_MP_Hits"                           |              20 |           0.004 |          204.045 |
- | "Unpack__Event_MC_UP_Hits"                           |              20 |           0.004 |          178.911 |
- | "Decode_ODIN"                                        |              20 |           0.000 |            8.867 |
- | "UnpackRawEvent_FTCluster"                           |              20 |           0.000 |            3.207 |
- | "FakeRunNumberProducer"                              |              20 |           0.000 |            2.522 |
+ | Sum of all Algorithms                                |              20 |          32.307 |      1615339.300 |
+ | "RootIOAlg"                                          |              20 |          26.930 |      1346488.117 |
+ | "ReserveIOVDD4hep"                                   |              20 |           2.967 |       148334.284 |
+ | "FTTrackChecker"                                     |              20 |           1.392 |        69598.440 |
+ | "PrHybridSeeding_c81a65a1"                           |              20 |           0.324 |        16192.636 |
+ | "MCTrackInfoCreator_f3c6ffba"                        |              20 |           0.203 |        10156.021 |
+ | "Unpack__Event_MC_Vertices"                          |              20 |           0.132 |         6596.877 |
+ | "Unpack__Event_MC_Particles"                         |              20 |           0.085 |         4229.171 |
+ | "PrLHCbID2MCParticleFT_cbc493b7"                     |              20 |           0.061 |         3029.777 |
+ | "PrTrackAssociator_426dfac9"                         |              20 |           0.050 |         2482.738 |
+ | "fromPrSeedingTracksV1Tracks_bc82b786"               |              20 |           0.042 |         2076.027 |
+ | "FTRawBankDecoder"                                   |              20 |           0.036 |         1781.283 |
+ | "PrStoreSciFiHits_fb0eba02"                          |              20 |           0.030 |         1490.181 |
+ | "LHCb__Converters__fromV1TrackFutureTrack_c717284c"  |              20 |           0.015 |          773.340 |
+ | "UnpackRawEvent_ODIN"                                |              20 |           0.011 |          565.303 |
+ | "FakeRunNumberProducer"                              |              20 |           0.010 |          495.676 |
+ | "Unpack__Event_MC_TV_Hits"                           |              20 |           0.007 |          341.483 |
+ | "Unpack__Event_MC_FT_Hits"                           |              20 |           0.007 |          334.172 |
+ | "Unpack__Event_MC_MP_Hits"                           |              20 |           0.004 |          181.400 |
+ | "Unpack__Event_MC_UP_Hits"                           |              20 |           0.003 |          169.895 |
+ | "Decode_ODIN"                                        |              20 |           0.000 |           10.828 |
+ | "PrFTHitTimesFromFile_5e5ff64b"                      |              20 |           0.000 |            9.753 |
+ | "UnpackRawEvent_FTCluster"                           |              20 |           0.000 |            2.453 |
 
 HLTControlFlowMgr                      INFO StateTree: CFNode   #executed  #passed
 LAZY_AND: ft_seeding_decision           #=20      Sum=20          Eff=|( 100.0000 +- 0.00000 )%|

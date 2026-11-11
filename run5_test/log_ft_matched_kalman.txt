@@ -1,0 +1,376 @@
+# setting LC_ALL to "C"
+# --> Including file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_ft_matched_kalman_test.py'
+/***** User ApplicationOptions/ApplicationOptions **************************************************
+|-append_decoding_keys_to_output_manifest = True  (default: True)
+|-auditors                                = []  (default: [])
+|-conddb_tag                              = ''  (default: '')
+|-conditions_version                      = 'sim11/run5-ideal'  (default: '')
+|-control_flow_file                       = ''  (default: '')
+|-data_flow_file                          = ''  (default: '')
+|-data_type                               = 'Upgrade'  (default: 'Upgrade')
+|-dddb_tag                                = ''  (default: '')
+|-dstformat                               = <DSTFormatTypes.DST: 'DST'>  (default: <DSTFormatTypes.DST: 'DST'>)
+|-enable_online_special_conditions        = False  (default: False)
+|-event_store                             = 'HiveWhiteBoard'  (default: 'HiveWhiteBoard')
+|-evt_max                                 = 20  (default: -1)
+|-first_evt                               = 0  (default: 0)
+|-force_odin                              = False  (default: False)
+|-gaudipython_mode                        = False  (default: False)
+|-geometry_backend                        = 'DD4Hep'  (default: 'DD4Hep')
+|-geometry_version                        = 'run5/proto-v00.03-picocalfix'  (default: '')
+|-histo_calo                              = False  (default: False)
+|-histo_file                              = 'run5_ft_matched_kalman_histos.root'  (default: '')
+|-histo_string_width                      = 80  (default: 80)
+|-input_files                             = ['/cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi']
+|                                         (default: [])
+|-input_manifest_file                     = ''  (default: '')
+|-input_process                           = ''  (default: '')
+|-input_raw_format                        = 0.5  (default: 0.5)
+|-input_stream                            = ''  (default: '')
+|-input_streams_attributes_file           = ''  (default: '')
+|-input_type                              = 'ROOT'  (default: '')
+|-ioalg_buffer_nb_events                  = 20  (default: 40)
+|-lines_maker                             = None
+|-mdf_ioalg_name                          = 'IOAlgFileRead'  (default: 'IOAlgFileRead')
+|-memory_pool_size                        = 10485760  (default: 10485760)
+|-monitoring_file                         = ''  (default: '')
+|-msg_svc_format                          = '% F%35W%S %7W%R%T %0W%M'  (default: '% F%35W%S %7W%R%T %0W%M')
+|-msg_svc_time_format                     = '%Y-%m-%d %H:%M:%S UTC'  (default: '%Y-%m-%d %H:%M:%S UTC')
+|-n_event_slots                           = 1  (default: -1)
+|-n_threads                               = 1  (default: 1)
+|-ntuple_basketsize                       = 32000  (default: 32000)
+|-ntuple_file                             = 'run5_ft_matched_kalman_tuple.root'  (default: '')
+|-ntuple_lun                              = 'FILE1'  (default: 'FILE1')
+|-output_file                             = ''  (default: '')
+|-output_level                            = 3  (default: 3)
+|-output_manifest_file                    = ''  (default: '')
+|-output_streams_attributes_file          = 'line_attribute_dict.json'  (default: 'line_attribute_dict.json')
+|-output_type                             = ''  (default: '')
+|-persistreco_version                     = 1.0  (default: 1.0)
+|-phoenix_filename                        = ''  (default: '')
+|-preamble_algs                           = []  (default: [])
+|-preload_input_files_at_initialize       = True  (default: True)
+|-print_freq                              = 5  (default: 10000)
+|-process                                 = None
+|-python_logging_level                    = 20  (default: 20)
+|-require_specific_decoding_keys          = []  (default: [])
+|-root_ioalg_name                         = 'RootIOAlg'  (default: 'RootIOAlg')
+|-root_ioalg_opts                         = {}  (default: {})
+|-scheduler_legacy_mode                   = False  (default: True)
+|-simulation                              = True  (default: None)
+|-write_decoding_keys_to_git              = None
+|-write_fsr                               = False  (default: False)
+|-write_fsr_json_file                     = ''  (default: '')
+|-write_options_to_fsr                    = False  (default: False)
+|-write_streams_attributes_to_json        = False  (default: False)
+|-xml_file_catalog                        = ''  (default: '')
+|-xml_summary_file                        = ''  (default: '')
+|-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
+\----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
+# Overrule specified for keys 
+# <-- End of file '/afs/cern.ch/work/x/xihu/stack/stack/scifi_run5_work/run5_ft_matched_kalman_test.py'
+# Using git repository: git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git
+# /***** Service LHCb::Det::LbDD4hep::DD4hepSvc/LHCb::Det::LbDD4hep::DD4hepSvc ***********************
+# |-OutputLevel               = 0
+# |-AuditInitialize           = False
+# |-AuditFinalize             = False
+# |-AuditStart                = False
+# |-AuditStop                 = False
+# |-AuditReinitialize         = False
+# |-AuditRestart              = False
+# |-AutoRetrieveTools         = True
+# |-CheckToolDeps             = True
+# |-GeometryLocation          = '${DETECTOR_PROJECT_ROOT}/compact'
+# |-GeometryVersion           = 'run5/proto-v00.03-picocalfix'  (default: '')
+# |-GeometryMain              = 'LHCb.xml'  (default: '')
+# |-ConditionsLocation        = 'git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git'
+# |                           (default: 'git:/lhcb-conditions-database')
+# |-ConditionsOverride        = {}  (default: {})
+# |-ConditionsVersion         = 'sim11/run5-ideal'  (default: 'HEAD')
+# |-DetectorList              = ['/world', 'TV', 'FT', 'Magnet']
+# |                           (default: ['/world', 'VP', 'UT', 'FT', 'Magnet', 'Rich1', 'Rich2', 'Ecal', 'Hcal', 'Muon'])
+# |-VerboseLevel              = 0
+# |-PrintLevel                = 3
+# |-NominalMagnetCurrent      = 5850.0
+# |-DumpConditions            = False
+# |-UseConditionsOverlay      = False
+# |-ConditionsOverlayInitPath = ''
+# |-LimitedIOVPaths           = []  (default: [])
+# |-nTGeoManagerThreads       = 1  (default: 1)
+# |-DetectorBuildType         = 'BUILD_DEFAULT'
+# \----- (End of Service LHCb::Det::LbDD4hep::DD4hepSvc/LHCb::Det::LbDD4hep::DD4hepSvc) --------------
+ApplicationMgr     SUCCESS 
+====================================================================================================================================
+                                                   Welcome to Moore version 59.1
+                                          running on lxplus940.cern.ch on Wed Nov 11 08:23:14 2026
+====================================================================================================================================
+ApplicationMgr        INFO Application Manager Configured successfully
+Gaudi__Histograming__Sink__Root        INFO Writing ROOT histograms to: run5_ft_matched_kalman_histos.root
+NTupleSvc                              INFO Added stream file:run5_ft_matched_kalman_tuple.root as FILE1
+HLTControlFlowMgr                      INFO Start initialization
+HLTControlFlowMgr                      INFO Will not use an EventSelector.
+RootHistSvc                            INFO Writing ROOT histograms to: run5_ft_matched_kalman_tuple.root
+HistogramPersistencySvc                INFO Added successfully Conversion service RootHistSvc
+DetectorDataSvc                        INFO Detector description not requested to be loaded
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+DD4hep           INFO  ++ Using globally Geant4 unit system (mm,ns,MeV)
+TGeoManager                            INFO Changing system of units to Geant4 units (mm, ns, MeV).
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Loading DD4hep Geometry: /afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/run5/proto-v00.03-picocalfix/LHCb.xml
+Detector                               INFO *********** Created World volume with size: 50000 50000 50000
+VisAttr                                INFO +++ BlackVis Allocated a Color: r:19 g:19 b:19, this will not save to a ROOT file
+Alignments                             INFO ++ Add dependency: alignmentsComputedKey: /world 00000000F25B48E3
+VisAttr                                INFO +++ Pipe:Bakeout Allocated a Color: r:00 g:FF b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:AfterMuon Allocated a Color: r:FF g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:InT Allocated a Color: r:00 g:E5 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ Pipe:AfterT Allocated a Color: r:E5 g:00 b:00, this will not save to a ROOT file
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Pipe/proto-run5-v00.00/materials.xml.
+VisAttr                                INFO +++ Regions:Upstream Allocated a Color: r:19 g:FF b:00, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:UpstreamRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BeforeMagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:MagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:AfterMagnetRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamRegion of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BlockWallBefMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BlockWallUpStr of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:BcmUp of type LHCb_Bcm_v1_0 [sensitive]
+Compact                                INFO ++ Converted subdetector:BcmDown of type LHCb_Bcm_v1_0 [sensitive]
+VisAttr                                INFO +++ MBXW:SpacerVis Allocated a Color: r:FF g:99 b:4C, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:MBXWUp of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:MBXWSUp of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:MBXWDown of type LHCb_MBXW_v1_0 
+Compact                                INFO ++ Converted subdetector:PipeUpstream of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAAUpstreamVax of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMAAAUpstream of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMACAUpstream1 of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMACAUpstream2 of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMABKUpstream of type LHCb_Pipe_VMA_v1_0 
+VisAttr                                INFO +++ Rich:VisRich1SubMaster Allocated a Color: r:4C g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1MagSh Allocated a Color: r:19 g:19 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1MgShield Allocated a Color: r:E5 g:19 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1CaFiInnerSeg Allocated a Color: r:00 g:7F b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1CaFiOuterSeg Allocated a Color: r:33 g:4C b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1Quadrant Allocated a Color: r:99 g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror1Master Allocated a Color: r:66 g:B2 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2QuadrantMaster Allocated a Color: r:33 g:CC b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2Support Allocated a Color: r:4C g:B2 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1Mirror2 Allocated a Color: r:19 g:66 b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1PhDetSupFrame Allocated a Color: r:B2 g:E5 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1BeamPipe Allocated a Color: r:00 g:00 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTModuleMaster Allocated a Color: r:B2 g:66 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTECR Allocated a Color: r:66 g:B2 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTECH Allocated a Color: r:33 g:7F b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTMaster Allocated a Color: r:CC g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTSMaster Allocated a Color: r:99 g:4C b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTQuartz Allocated a Color: r:B2 g:33 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTPhCathode Allocated a Color: r:33 g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTEnvelope Allocated a Color: r:33 g:66 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTFrontRing Allocated a Color: r:19 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichPMTShielding Allocated a Color: r:7F g:4C b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTQuartz Allocated a Color: r:B2 g:CC b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTEnvelope Allocated a Color: r:7F g:99 b:7F, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTFrontRing Allocated a Color: r:66 g:33 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTMaster Allocated a Color: r:7F g:B2 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTAnode Allocated a Color: r:66 g:66 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRichGrandPMTModuleMaster Allocated a Color: r:4C g:66 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitG10Upstr Allocated a Color: r:7F g:4C b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitG10Dnstr Allocated a Color: r:66 g:33 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitPMI Allocated a Color: r:4C g:CC b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitDiaphramCentral Allocated a Color: r:33 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich1ExitDiaphramPlug Allocated a Color: r:66 g:4C b:CC, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:Rich1 of type LHCb_Rich1_Geometry_RUN3_v2 
+VisAttr                                INFO +++ TV:BumpBonds Allocated a Color: r:B2 g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:GuardRing Allocated a Color: r:00 g:E5 b:E5, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:Hybrid Allocated a Color: r:00 g:B2 b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:Clamp Allocated a Color: r:E5 g:00 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:LVClamp Allocated a Color: r:D3 g:AD b:35, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:ModuleGBT Allocated a Color: r:4C g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:RFBox Allocated a Color: r:FF g:4C b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ RFFoil Allocated a Color: r:7F g:7F b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:DAQBox Allocated a Color: r:0F g:FC b:EF, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:DAQBoxSeals Allocated a Color: r:19 g:07 b:63, this will not save to a ROOT file
+VisAttr                                INFO +++ TV:VacuumTank Allocated a Color: r:4C g:B2 b:FF, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:TV of type LHCb_TV_v1_0 [tracker]
+TGeoMixture::ComputeDerivedQuant... WARNING Mixture UP:PCB: sum of weights is: 0.9953
+VisAttr                                INFO +++ UP:Envelope Allocated a Color: r:FF g:7F b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Frame Allocated a Color: r:54 g:2D b:3F, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:GR Allocated a Color: r:66 g:93 b:87, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:VTRx Allocated a Color: r:00 g:00 b:ED, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:KaptonCable Allocated a Color: r:26 g:26 b:26, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Al Allocated a Color: r:FF g:FF b:DD, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:HybridFlex Allocated a Color: r:8C g:87 b:82, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Asic Allocated a Color: r:FF g:68 b:B5, this will not save to a ROOT file
+VisAttr                                INFO +++ UP:Stiffener Allocated a Color: r:93 g:BC b:E0, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:UP of type LHCb_UP_v1_0 [tracker]
+Compact                                INFO ++ Converted subdetector:PipeBeforeVelo of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeBeforeVeloSupFix of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeBeforeMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:TVUpStreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VeloDownStreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeInUP of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAA of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:Magnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeMagnet of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeMagnet-Support of type DD4hep_VolumeAssembly 
+VisAttr                                INFO +++ FT:Module Allocated a Color: r:E5 g:33 b:33, this will not save to a ROOT file
+VisAttr                                INFO +++ FT:Core Allocated a Color: r:00 g:4C b:00, this will not save to a ROOT file
+VisAttr                                INFO +++ FT:Core1 Allocated a Color: r:7F g:00 b:33, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:FT of type LHCb_FT_geo_v1_0 [tracker]
+VisAttr                                INFO +++ MP:MT Allocated a Color: r:00 g:99 b:E0, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:Silicon Allocated a Color: r:B2 g:72 b:A5, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:Enclosure Allocated a Color: r:D1 g:B5 b:8C, this will not save to a ROOT file
+VisAttr                                INFO +++ MP:ServicesData Allocated a Color: r:3F g:FC b:FF, this will not save to a ROOT file
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule1             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule2             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule3             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule5             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule6             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule7             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule9             
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule10            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule17            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule18            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule19            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule21            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule22            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule23            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule25            
+MP-geo                              SUCCESS +++ Building Module:   lvMPModule26            
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol1                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol2                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol3                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol4                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol5                
+MP-geo                              SUCCESS +++ Building Column:   lvMPCol6                
+MP-geo                              SUCCESS +++ Building CFrame type: lvMPCFrameSolid
+MP-geo                              SUCCESS +++ Building CFrame Half:   lvMPCFrameLayer         
+MP-geo                              SUCCESS +++ Building layer:   lvLayer                 
+MP-geo                              SUCCESS +++ Building enclosure: lvMPEnclosureHalf
+MP-geo                              SUCCESS +++ Building Enclosure Box:   lvMPEnclosureBoxSpaceHalf
+MP-geo                              SUCCESS +++ Building patch panel: lvMPServicePPHalf
+MP-geo                              SUCCESS +++ Building lower patch panel: lvMPServicePPLowHalf
+MP-geo                              SUCCESS +++ Building Top Right PP: lvMPServicePPTRHalf
+MP-geo                              SUCCESS +++ Building bot left PP: lvMPServicePPTRLowHalf
+MP-geo                              SUCCESS +++ Building Patch Panel Layer: lvMPPatchPanelLayerHalf 
+MP-geo                              SUCCESS +++ Building support type: lvMPSupportStructureHalf
+MP-geo                              SUCCESS +++ Building Support Layers:   lvMPSupportLayerHalf    
+MP-geo                              SUCCESS +++ Building Exterior CO2 supply lines type: lvMPCO2ExteriorSupplyHalf
+MP-geo                              SUCCESS +++ Building Exterior CO2 exhaust lines type: lvMPCO2ExteriorExhaustHalf
+MP-geo                              SUCCESS +++ Building Interior CO2 supply lines type: lvMPCO2InteriorSupplyHalf
+MP-geo                              SUCCESS +++ Building Interior CO2 exhaust lines type: lvMPCO2InteriorExhaustHalf
+MP-geo                              SUCCESS +++ Building CO2 manifold type: lvMPCO2ManifoldHalf
+MP-geo                              SUCCESS +++ Building CO2 distribution type: lvMPCO2DistributionHalf
+MP-geo                              SUCCESS +++ Building Cooling Layer: lvMPCoolingLayerHalf    
+MP-geo                              SUCCESS +++ Building Low Volt Services type: lvMPServicesLowVoltHalf
+MP-geo                              SUCCESS +++ Building Ribbon type: lvMPServicesRibbonHalf
+MP-geo                              SUCCESS +++ Building Fiber Services type: lvMPServicesDataFibersHalf
+MP-geo                              SUCCESS +++ Building Fiber Fanout type: lvMPServicesDataFibersFanOutHalf
+MP-geo                              SUCCESS +++ Building Ribbon Layer: lvMPServicesLayerHalf   
+MP-geo                              SUCCESS +++ Building station type: lvStationHalf
+MP-geo                              SUCCESS Layer 0 z=5.000 -z=1.400 +z=8.600 [cm]
+MP-geo                              SUCCESS +++ Building enclosure: lvMPEnclosureFull
+MP-geo                              SUCCESS +++ Building Enclosure Box:   lvMPEnclosureBoxSpaceFull
+MP-geo                              SUCCESS +++ Building patch panel: lvMPServicePPFull
+MP-geo                              SUCCESS +++ Building lower patch panel: lvMPServicePPLowFull
+MP-geo                              SUCCESS +++ Building Top Right PP: lvMPServicePPTRFull
+MP-geo                              SUCCESS +++ Building bot left PP: lvMPServicePPTRLowFull
+MP-geo                              SUCCESS +++ Building Patch Panel Layer: lvMPPatchPanelLayerFull 
+MP-geo                              SUCCESS +++ Building support type: lvMPSupportStructureFull
+MP-geo                              SUCCESS +++ Building Support Layers:   lvMPSupportLayerFull    
+MP-geo                              SUCCESS +++ Building Exterior CO2 supply lines type: lvMPCO2ExteriorSupplyFull
+MP-geo                              SUCCESS +++ Building Exterior CO2 exhaust lines type: lvMPCO2ExteriorExhaustFull
+MP-geo                              SUCCESS +++ Building Interior CO2 supply lines type: lvMPCO2InteriorSupplyFull
+MP-geo                              SUCCESS +++ Building Interior CO2 exhaust lines type: lvMPCO2InteriorExhaustFull
+MP-geo                              SUCCESS +++ Building CO2 manifold type: lvMPCO2ManifoldFull
+MP-geo                              SUCCESS +++ Building CO2 distribution type: lvMPCO2DistributionFull
+MP-geo                              SUCCESS +++ Building Cooling Layer: lvMPCoolingLayerFull    
+MP-geo                              SUCCESS +++ Building Low Volt Services type: lvMPServicesLowVoltFull
+MP-geo                              SUCCESS +++ Building Ribbon type: lvMPServicesRibbonFull
+MP-geo                              SUCCESS +++ Building Fiber Services type: lvMPServicesDataFibersFull
+MP-geo                              SUCCESS +++ Building Fiber Fanout type: lvMPServicesDataFibersFanOutFull
+MP-geo                              SUCCESS +++ Building Ribbon Layer: lvMPServicesLayerFull   
+MP-geo                              SUCCESS +++ Building station type: lvStationFull
+MP-geo                              SUCCESS Layer 0 z=-80.000 -z=-83.600 +z=-76.400 [cm]
+MP-geo                              SUCCESS Layer 3 z=80.000 -z=76.400 +z=83.600 [cm]
+MP-geo                              SUCCESS +++ Position station MP1 of type lvStationHalf
+MP-geo                              SUCCESS +++ Position station MP2 of type lvStationFull
+MP-geo                              SUCCESS +++ Position station MP3 of type lvStationFull
+MP-geo                              SUCCESS +++ Position station MP4 of type lvStationHalf
+Compact                                INFO ++ Converted subdetector:MP of type LHCb_MP_DetailedGeo [tracker]
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichMatDir/RichMaterialTabProperty.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichMatDir/RichMaterials.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/GeomParam/Rich1GeometryParameters.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/RichVisDir/Rich1VisAttrDef.xml.
+VisAttr                                INFO +++ Rich:VisRichSystem Allocated a Color: r:7F g:CC b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasEnclosure Allocated a Color: r:66 g:4C b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SecMirrMaster Allocated a Color: r:66 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SphMirrSegment Allocated a Color: r:33 g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SecMirrSegment Allocated a Color: r:B2 g:33 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasEnclWall Allocated a Color: r:4C g:7F b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2EntryWindowSkin Allocated a Color: r:B2 g:66 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2EntryWindowPMI Allocated a Color: r:19 g:B2 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWindowSkin Allocated a Color: r:99 g:B2 b:66, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWindowPMI Allocated a Color: r:4C g:66 b:B2, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2ExitWinTubeLock Allocated a Color: r:7F g:4C b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2GasQW Allocated a Color: r:19 g:33 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2PhDetGasEncl Allocated a Color: r:19 g:99 b:4C, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrAirTrapRight Allocated a Color: r:7F g:33 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrAirTrapLeft Allocated a Color: r:B2 g:66 b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ Rich:VisRich2SuperStrRod Allocated a Color: r:4C g:99 b:99, this will not save to a ROOT file
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichSurfaceParam.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichPMTSurfaceTabProperty.xml.
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Rich/2025-v00.01/Rich1/Rich1SurfaceDir/RichPMTSurfaces.xml.
+Compact                                INFO ++ Converted subdetector:Rich2 of type LHCb_Rich2_Geometry_RUN3_v2 
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/Pipe/proto-run5-v00.00/AfterMagnet-Params.xml.
+Compact                                INFO ++ Converted subdetector:PipeAfterMagnetBakeout of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeInT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeAfterT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeSupportAfterT of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:NeutronShielding of type DD4hep_VolumeAssembly 
+VisAttr                                INFO +++ MUON:CopperLayerVis Allocated a Color: r:FF g:4C b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:G10LayerVis Allocated a Color: r:19 g:19 b:CC, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:FrameVis Allocated a Color: r:4C g:4C b:99, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:ChamberVis Allocated a Color: r:84 g:3A b:0C, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:SupportVis Allocated a Color: r:A8 g:AA b:B5, this will not save to a ROOT file
+VisAttr                                INFO +++ MUON:Gap Allocated a Color: r:7F g:19 b:19, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:Muon of type LHCb_Muon_v1_0 [tracker]
+Compact                                INFO ++ Already processed xml document file:/afs/cern.ch/work/x/xihu/stack/stack/Detector/compact/components/PicoCal/proto-run5-v01.00/modules/positions.xml.
+VisAttr                                INFO +++ vPicoCal:PlasticPlate Allocated a Color: r:19 g:E5 b:19, this will not save to a ROOT file
+VisAttr                                INFO +++ vPicoCal:Shield Allocated a Color: r:FF g:7F b:FF, this will not save to a ROOT file
+VisAttr                                INFO +++ vPicoCal:ReadOutBox Allocated a Color: r:CC g:7F b:00, this will not save to a ROOT file
+Compact                                INFO ++ Converted subdetector:PicoCal of type LHCb_PicoCal_v1_0 [calorimeter]
+Compact                                INFO ++ Converted subdetector:DownstreamPipe of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamPipeBakeout of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:DownstreamPipeSupport of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:PipeAfterMuon of type DD4hep_VolumeAssembly 
+Compact                                INFO ++ Converted subdetector:VMAAADownstream of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMAAADownstreamVax of type LHCb_Pipe_VMA_v1_0 
+Compact                                INFO ++ Converted subdetector:VMABJ of type LHCb_Pipe_VMA_v1_0 
+Detector                               INFO +++ Patching names of anonymous shapes....
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Field map location: /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using conditions location: git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using conditions tag: sim11/run5-ideal
+LHCb::Det::LbDD4hep::DD4hepSvc         INFO Using detector list: [/world, TV, FT, Magnet]
+DetectorDataService                    INFO Using repository git:/cvmfs/lhcb.cern.ch/lib/lhcb/git-conddb/lhcb-conditions-database.git, tag:sim11/run5-ideal
+RndmGenSvc.Engine                      INFO Generator engine type:HepRndm::SynchronizedEngine<CLHEP::RanluxEngine>
+RndmGenSvc.Engine                      INFO Current Seed:1234567 Luxury:3
+RndmGenSvc                             INFO Using Random engine:HepRndm::Engine<CLHEP::RanluxEngine>
+RootIOAlg                              INFO DATAFILE='/cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi'
+HLTControlFlowMgr                      INFO Concurrency level information:
+HLTControlFlowMgr                      INFO  o Number of events slots: 1
+HLTControlFlowMgr                      INFO  o TBB thread pool size:  'ThreadPoolSize':1
+HLTControlFlowMgr                      INFO ---> End of Initialization. This took 31045 ms
+ApplicationMgr                         INFO Application Manager Initialized successfully
+ApplicationMgr                         INFO Application Manager Started successfully
+HLTControlFlowMgr                      INFO Will measure time between events 2 and 18 (stop might be some events later)
+HLTControlFlowMgr                      INFO Starting loop on events
+HLTControlFlowMgr                   SUCCESS Processing event 0 in slot 0
+ConditionsMgr                          INFO Created IOV Pool for:run(0):[0-9223372036854775807]
+Align                                  INFO Alignments:(D:1694,C:1957,M:0,*:9785) Effective IOV:run(0):[0-9223372036854775807]  [0.02872 seconds]
+DeMagnetConditionCall                  INFO Loading mag field from /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf
+MagneticFieldExtension                 INFO Scale factor: 1.000000
+MagneticFieldGridReader                INFO Opened magnetic field file:  /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v8r1/cdf/field.v5r0.down.bin
+FTRawBankDecoder                       INFO Conditions DB is compatible with FT bank version 7 and 8.
+DependencyHandler                      INFO Inserted 8 [8] conditions to pool-iov: run(0):[0-9223372036854775807]   [0.00001 seconds]
+DetectorDataService                    INFO +  Created/Accessed a total of 3440 conditions (S:  1716,L:  1716,C:     8,M:0)  Load:0.49726s/4168KB Compute:0.09046s/0KB
+RootIOAlg                           SUCCESS Reading Event record 1 within /cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi, 1 overall
+TUnixSystem::DispatchSignals          FATAL segmentation violation
