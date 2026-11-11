@@ -29,3 +29,12 @@ mkdir -p scifi_run5_work/run5_test && cd scifi_run5_work/run5_test
 Input: `upgrade2_minbias_1p0e34_Jan2026` (DIGI with MC truth, on CVMFS), 20 events.
 Result (20 events, FT-reconstructible long tracks): efficiency 89.5%, >5 GeV 97.0%, purity 99.4%,
 ghosts 13.6%, clones 0%.
+
+## Time-aware seeding (prototype)
+- `external_time/extract_mc_times.py`: external GaudiPython job, MC hit time per lite cluster (outside the stack).
+- `external_time/smear_times.py`: external Gaussian smearing, one table per sigma_t (`event channelID time[ns]`).
+- Rec: `PrFTHitTimesFromFile` reads the table (no smearing, no MC); `PrHybridSeeding` fits `t = a + b*dz`
+  (`PrTrackFitterT.h`) with options `TimeSelection`, `SigmaT`, `MaxTimeChi2PerDoF`, `T0Window`.
+- Run from `run5_test/`: `../run_time_scan.sh TAG TIMEFILE SIGMA_NS 1 [EVT] [CHI2CUT] [T0WIN]`
+  (`Moore/run` drops env vars, so settings go through `time_config.json`), or `../run_sigma_scan.sh 3`.
+- Table: `python3 ../make_time_scan_report.py TIME_SCAN_REPORT.md label=log ...`

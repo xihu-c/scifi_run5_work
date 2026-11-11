@@ -1,0 +1,109 @@
+# setting LC_ALL to "C"
+/***** User ApplicationOptions/ApplicationOptions **************************************************
+|-append_decoding_keys_to_output_manifest = True  (default: True)
+|-auditors                                = []  (default: [])
+|-conddb_tag                              = ''  (default: '')
+|-conditions_version                      = 'sim11/run5-ideal'  (default: '')
+|-control_flow_file                       = ''  (default: '')
+|-data_flow_file                          = ''  (default: '')
+|-data_type                               = 'Upgrade'  (default: 'Upgrade')
+|-dddb_tag                                = ''  (default: '')
+|-dstformat                               = <DSTFormatTypes.DST: 'DST'>  (default: <DSTFormatTypes.DST: 'DST'>)
+|-enable_online_special_conditions        = False  (default: False)
+|-event_store                             = 'HiveWhiteBoard'  (default: 'HiveWhiteBoard')
+|-evt_max                                 = 20  (default: -1)
+|-first_evt                               = 0  (default: 0)
+|-force_odin                              = False  (default: False)
+|-gaudipython_mode                        = True  (default: False)
+|-geometry_backend                        = 'DD4Hep'  (default: 'DD4Hep')
+|-geometry_version                        = 'run5/proto-v00.03-picocalfix'  (default: '')
+|-histo_calo                              = False  (default: False)
+|-histo_file                              = ''  (default: '')
+|-histo_string_width                      = 80  (default: 80)
+|-input_files                             = ['/cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi']
+|                                         (default: [])
+|-input_manifest_file                     = ''  (default: '')
+|-input_process                           = ''  (default: '')
+|-input_raw_format                        = 0.5  (default: 0.5)
+|-input_stream                            = ''  (default: '')
+|-input_streams_attributes_file           = ''  (default: '')
+|-input_type                              = 'ROOT'  (default: '')
+|-ioalg_buffer_nb_events                  = 20  (default: 40)
+|-lines_maker                             = None
+|-mdf_ioalg_name                          = 'IOAlgFileRead'  (default: 'IOAlgFileRead')
+|-memory_pool_size                        = 10485760  (default: 10485760)
+|-monitoring_file                         = ''  (default: '')
+|-msg_svc_format                          = '% F%35W%S %7W%R%T %0W%M'  (default: '% F%35W%S %7W%R%T %0W%M')
+|-msg_svc_time_format                     = '%Y-%m-%d %H:%M:%S UTC'  (default: '%Y-%m-%d %H:%M:%S UTC')
+|-n_event_slots                           = 1  (default: -1)
+|-n_threads                               = 1  (default: 1)
+|-ntuple_basketsize                       = 32000  (default: 32000)
+|-ntuple_file                             = ''  (default: '')
+|-ntuple_lun                              = 'FILE1'  (default: 'FILE1')
+|-output_file                             = ''  (default: '')
+|-output_level                            = 3  (default: 3)
+|-output_manifest_file                    = ''  (default: '')
+|-output_streams_attributes_file          = 'line_attribute_dict.json'  (default: 'line_attribute_dict.json')
+|-output_type                             = ''  (default: '')
+|-persistreco_version                     = 1.0  (default: 1.0)
+|-phoenix_filename                        = ''  (default: '')
+|-preamble_algs                           = []  (default: [])
+|-preload_input_files_at_initialize       = True  (default: True)
+|-print_freq                              = 10000  (default: 10000)
+|-process                                 = None
+|-python_logging_level                    = 20  (default: 20)
+|-require_specific_decoding_keys          = []  (default: [])
+|-root_ioalg_name                         = 'RootIOAlg'  (default: 'RootIOAlg')
+|-root_ioalg_opts                         = {}  (default: {})
+|-scheduler_legacy_mode                   = True  (default: True)
+|-simulation                              = True  (default: None)
+|-write_decoding_keys_to_git              = None
+|-write_fsr                               = False  (default: False)
+|-write_fsr_json_file                     = ''  (default: '')
+|-write_options_to_fsr                    = False  (default: False)
+|-write_streams_attributes_to_json        = False  (default: False)
+|-xml_file_catalog                        = ''  (default: '')
+|-xml_summary_file                        = ''  (default: '')
+|-xml_summary_svc                         = 'XMLSummarySvc'  (default: 'XMLSummarySvc')
+\----- (End of User ApplicationOptions/ApplicationOptions) -----------------------------------------
+ApplicationMgr     SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v40r6)
+                                          running on lxplus940.cern.ch on Tue Nov 10 15:59:45 2026
+====================================================================================================================================
+ApplicationMgr        INFO Application Manager Configured successfully
+RootIOAlg                              INFO DATAFILE='/cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi'
+EventLoopMgr                           INFO Unable to locate service "EventSelector": No events will be processed from external input.
+ApplicationMgr                         INFO Application Manager Initialized successfully
+ApplicationMgr                         INFO Application Manager Started successfully
+RootIOAlg                           SUCCESS Reading Event record 1 within /cvmfs/lhcbdev.cern.ch/testfiledb-mirror/rta/WP6/UII/Jan2026/MINBIAS/1p0E34/MINBIAS_proto-v00.03_L1p0E34_Slot_9-30000000-100ev-20260129-Extended.digi, 1 overall
+PrintHeader_5e7336a6                   INFO # 1 Run 901, Event 0
+PrintHeader_5e7336a6                   INFO # 2 Run 901, Event 1
+PrintHeader_5e7336a6                   INFO # 3 Run 901, Event 2
+PrintHeader_5e7336a6                   INFO # 4 Run 901, Event 3
+PrintHeader_5e7336a6                   INFO # 5 Run 901, Event 4
+PrintHeader_5e7336a6                   INFO # 6 Run 901, Event 5
+PrintHeader_5e7336a6                   INFO # 7 Run 901, Event 6
+PrintHeader_5e7336a6                   INFO # 8 Run 901, Event 7
+PrintHeader_5e7336a6                   INFO # 9 Run 901, Event 8
+PrintHeader_5e7336a6                   INFO # 10 Run 901, Event 9
+PrintHeader_5e7336a6                   INFO # 11 Run 901, Event 10
+PrintHeader_5e7336a6                   INFO # 12 Run 901, Event 11
+PrintHeader_5e7336a6                   INFO # 13 Run 901, Event 12
+PrintHeader_5e7336a6                   INFO # 14 Run 901, Event 13
+PrintHeader_5e7336a6                   INFO # 15 Run 901, Event 14
+PrintHeader_5e7336a6                   INFO # 16 Run 901, Event 15
+PrintHeader_5e7336a6                   INFO # 17 Run 901, Event 16
+PrintHeader_5e7336a6                   INFO # 18 Run 901, Event 17
+PrintHeader_5e7336a6                   INFO # 19 Run 901, Event 18
+PrintHeader_5e7336a6                   INFO # 20 Run 901, Event 19
+WROTE 190453 lines to mc_times_20ev.txt
+PrintHeader_5e7336a6                   INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "EventCount"                                    |        20 |
+Unpack__Event_MC_FT_Hits               INFO Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# UnPackedData"                                |        20 |     151134 |     7556.7 |     1670.7 |      4588.0 |      10996. |
+ApplicationMgr                         INFO Application Manager Stopped successfully
+ApplicationMgr                         INFO Application Manager Finalized successfully
+ApplicationMgr                         INFO Application Manager Terminated successfully

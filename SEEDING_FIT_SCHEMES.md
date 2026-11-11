@@ -229,3 +229,24 @@ more sensitive to the y-fit quality.
 
 Run original, A, B-with-prior, B-free on the Run 5 MC samples (`upgrade2_minbias_{1p0,1p3,1p5}e34_Jan2026`)
 and compare efficiency, ghost rate, and the time residual width for pions vs protons, per pile-up. Fit parameters and residuals can be extracted directly into histograms for validation against the model.
+
+## Prototype results (Rec only, 20 events, 1.0e34, no tau added)
+
+Implemented as the primed form $t_i = a_t' + b_t'\,dz_i$ (free slope, no prior), per-hit $\sigma_t$, with
+hit times read from an external table (`external_time/`). Time-fit $\chi^2/\mathrm{ndf}<3$ applied to seeds:
+
+| $\sigma_t$ | Long FT eff [%] | Ghost [%] |
+|---|---|---|
+| no time | 89.5 | 13.6 |
+| 50 ps | 72.7 | 0.71 |
+| 100 ps | 78.7 | 0.94 |
+| 200 ps | 84.2 | 1.98 |
+| 500 ps | 88.2 | 4.83 |
+| 1 ns | 89.0 | 7.87 |
+
+Reconstruction of $a_t - z_{ref}k/c$ (core Gaussian width, $\approx t_0 - z_0 k/c$): 0.43, 0.49, 0.45, 0.53, 0.66 ns
+for the same $\sigma_t$ set. It saturates near 0.4--0.5 ns for $\sigma_t\lesssim200$ ps, so the
+$t_0$ cut is limited by the $a_t$--$z_0$ degeneracy and the physical $z_0$ spread, not by $\sigma_t$;
+a $t_0$ window narrower than about 1 ns is not useful without a $z_0$ estimate. The $\chi^2$ cut costs efficiency at small $\sigma_t$. The cause is not yet measured; a hypothesis is that true
+seeds deviate from a straight line in $dz$ (path length, slow or secondary particles, the earliest-MC-hit rule),
+which would need a model-error term added to $\sigma_t$. Check by plotting the time residuals of true seeds.
