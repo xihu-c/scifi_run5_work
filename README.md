@@ -49,6 +49,7 @@ The newer TDR production directories require their corresponding geometry.
 
 Learning and design documents:
 
+- [SCIFI_TIMING_REVIEW_SLIDES.md](SCIFI_TIMING_REVIEW_SLIDES.md): seven-section presentation draft with detector/code sources, review notes, and measured versus unmeasured performance.
 - [SCIFI_SPATIAL_KALMAN_READING_GUIDE.md](SCIFI_SPATIAL_KALMAN_READING_GUIDE.md)
 - [SCIFI_TIME_KALMAN_EXTENSION_SCHEME.md](SCIFI_TIME_KALMAN_EXTENSION_SCHEME.md)
 
